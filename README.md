@@ -35,3 +35,13 @@ Para nosotros utilizar imágenes debemos de colocar un texto alternativo en brac
 
 Para nosotros utilizar el formateo de código dentro de texto plano debemos utilizar el 
 caracter `Tilde Invertida`
+
+
+## Formateo de Bloque de código
+
+Para utilizar el formateo de código en un bloque de código necesitamos utilizar 3 `Tildes invertidas`
+donde se puede especificar el lenguaje de programación a utilizarse, justo después de las 3 `Tildes invertidas`
+
+```javascript
+var mensaje "Hola mundo";
+```
