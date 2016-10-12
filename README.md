@@ -50,9 +50,14 @@ var mensaje "Hola mundo";
 * Bloque de código de una `consola`
 
 ```
-
 >apt-get update paquete
 >
+```
 
+* Bloque de HTML
+
+```
+<html>
+</html>
 ```
 
