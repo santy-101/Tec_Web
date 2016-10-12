@@ -31,3 +31,7 @@ Para nosotros utilizar imágenes debemos de colocar un texto alternativo en brac
 
 ![Imagen de Js de color amarillo](http://www.javatpoint.com/images/javascript/javascript_logo.png "Javascript")
 
+## Formateo de Código
+
+Para nosotros utilizar el formateo de código dentro de texto plano debemos utilizar el 
+caracter `Tilde Invertida`
