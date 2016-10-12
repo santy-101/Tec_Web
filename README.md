@@ -25,3 +25,9 @@ Este repositorio forma parte del [curso de tecnologías web](https://github.com/
 Para utilizar un [link](https://github.com/adrianeguez/Tec_Web_Js_2016_B) debemos encerrar el texto en [] 
 seguido del URL entre paréntesis ()
 
+## Imágenes 
+
+Para nosotros utilizar imágenes debemos de colocar un texto alternativo en brackets [] después del caracter de exclamación ! y el link de la imagen entre paréntesis.
+
+![Imagen de Js de color amarillo](http://www.javatpoint.com/images/javascript/javascript_logo.png "Javascript")
+
