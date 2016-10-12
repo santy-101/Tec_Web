@@ -23,7 +23,7 @@ Este repositorio forma parte del [curso de tecnologías web](https://github.com/
 ## Links
 
 Para utilizar un [link](https://github.com/adrianeguez/Tec_Web_Js_2016_B) debemos encerrar el texto en [] 
-seguido del URL entre paréntesis ()
+seguido del URL entre paréntesis ().
 
 ## Imágenes 
 
@@ -34,14 +34,25 @@ Para nosotros utilizar imágenes debemos de colocar un texto alternativo en brac
 ## Formateo de Código
 
 Para nosotros utilizar el formateo de código dentro de texto plano debemos utilizar el 
-caracter `Tilde Invertida`
+caracter `Tilde Invertida`.
 
 
 ## Formateo de Bloque de código
 
 Para utilizar el formateo de código en un bloque de código necesitamos utilizar 3 `Tildes invertidas`
-donde se puede especificar el lenguaje de programación a utilizarse, justo después de las 3 `Tildes invertidas`
+donde se puede especificar el lenguaje de programación a utilizarse, justo después de las 3 `Tildes invertidas`.
 
+* Bloque de código con `javascript`
 ```javascript
 var mensaje "Hola mundo";
 ```
+
+* Bloque de código de una `consola`
+
+```
+
+>apt-get update paquete
+>
+
+```
+
