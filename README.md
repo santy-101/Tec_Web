@@ -63,7 +63,7 @@ var mensaje "Hola mundo";
 
 ##Tablas
 
-Para usar tablas necesitamos definir las filas con ||
+Para usar tablas necesitamos definir las filas con |
 
 Columna 1 | Columna 2 | Columna 3 | Columna 4 
 ---|---|---|---
@@ -83,3 +83,16 @@ Para escribir varias líneas de citas solamente las concatenamos en la siguiente
 Sino utilizamos una cita en una línea con mayor que `>`:
 
 > Y si me matas, ¿me muero?
+
+## Saltos de línea
+
+Para utilizar un salto de línea debemos utilizar más de 3 veces el caracter `-`
+
+---
+
+O el caracter `*`
+***
+
+O el caracter `_`
+
+___
