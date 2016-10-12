@@ -96,3 +96,12 @@ O el caracter `*`
 O el caracter `_`
 
 ___
+
+
+## Video de Youtube
+
+Es uso puro de HTML dentro de markdown.
+
+<a href="https://www.youtube.com/watch?v=iv-8-EgPEY0
+" target="_blank"><img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
