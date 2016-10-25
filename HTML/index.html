@@ -19,6 +19,13 @@ PropiedadCSS: valorPropuedadCSS;-->
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <style>
+        .borde
+        {
+            border: black solid 2px;
+        }
+    </style>
 
     <!-- Referenciar archivos de estilo-->
 
@@ -38,13 +45,15 @@ PropiedadCSS: valorPropuedadCSS;-->
 <!--            .col-md-4*3>h2 Emmet-->
 
             <h1>Fila 1</h1>
-            <div class="col-md-4">
+            
+<!--            md en 990 pixeles se hace pequeño-->
+            <div class="col-md-4 borde">
                 <h2>Columna md 4 - 1</h2>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 borde">
                 <h2>Columna md 4 - 2</h2>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 borde">
                 <h2>Columna md 4 - 3</h2>
             </div>
             
@@ -52,10 +61,35 @@ PropiedadCSS: valorPropuedadCSS;-->
         </div>
         <div class="row" style="background-color:purple;">
             <h1>Fila 2</h1>
-
+            
+<!--            .col-sm-3.borde*4>h3 Emmet-->
+<!--            sm en 770 pixeles se hace pequeño-->
+       
+        <div class="col-sm-3 borde">
+            <h3>CSM3 -1</h3>
         </div>
-        <div class="row" style="background-color:red;">
+        <div class="col-sm-3 borde">
+            <h3>CSM3 -2</h3>
+        </div>
+        <div class="col-sm-3 borde">
+            <h3>CSM3 -3</h3>
+        </div>
+        <div class="col-sm-3 borde">
+            <h3>CSM3 -4</h3>
+        </div>
+        </div>
+    
+               <div class="row" style="background-color:red;">
             <h1>Fila 3</h1>
+            
+<!--             .col-lg-6.borde*2>h3 Emmet-->
+           
+           <div class="col-lg-6 borde">
+               <h3>CLG6 - 1</h3>
+           </div>
+           <div class="col-lg-6 borde">
+               <h3>CLG6 - 2 </h3>
+           </div>
             
         </div>
 
