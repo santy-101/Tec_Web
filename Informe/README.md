@@ -316,10 +316,97 @@ Código | Definición
 12) El código de la misma está disponible en [Código HTML](https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/index.html).
 * Para esta página se han utilizado los tags mostradas en el <a href="#Marco Teórico">Marco Teórico</a>.
 
+---
+### Explicación del código HTML
+
+`<html lang="en" style="background-color:#3690a2;">` 
+* Lenguaje de la página: inglés. 
+* Color de fondo: #3690a2 (el azul que está a los bordes de la página)
+---
+`<meta charset="UTF-8">`
+* Utilizamos codificación UTF-8.
+
+---
+`<title>Aprendiendo HTML</title>`
+* El título de la página HTML es *Aprendiendo HTML*.
+
+---
+`<body style="background-color:#62b99c;">`
+
+* El color de fondo del cuerpo es #62b99c (verde que ocupa casi toda la página).
+
+---
+`<h1>Caballeros del Zodiaco</h1>`
+
+* Un encabezado grande que dice *Caballeros del Zodiaco*.
+
+---
+
+` <img src="https://static.betazeta.com/www.fayerwayer.com/up/2015/02/Armaduras-de-Caballeros-del-Zodiaco-en-tama%C3%B1o-real-llegar%C3%A1n-a-M%C3%A9xico-960x623.jpg" alt="Caballero dorado posando" ;>`
+
+* Una imagen cuyo texto alternativo es *Caballero dorado posando*.
+
+---
+` <a href="https://es.wikipedia.org/wiki/Saint_Seiya" ; target="_blank">
+        Caballeros del Zodiaco Wikipedia
+    <img src="https://static.betazeta.com/www.fayerwayer.com/up/2015/02/Armaduras-de-Caballeros-del-Zodiaco-en-tama%C3%B1o-real-llegar%C3%A1n-a-M%C3%A9xico-960x623.jpg" alt="Caballero dorado posando"; >
+    </a>` 
+
+* Un enlace a Wikipedia al cual se accede haciendo clic en la imagen.
+
+---
+ `<p style="background-color:#97bcc3;">`
+ 
+* Un párrafo con fondo gris
+
+---
+
+`<ul>`
+
+        <li>Saint Seiya</li>
+
+        <li>Aioria</li>
+
+        <li>Shiryu</li>
+
+`</ul>`
+
+* Una lista no ordenada (unordered list - ul) con tres elementos (list items - li)
+
+---
+
+`<ol>`
+
+        <li>Saint Seiya</li>
+        
+       <li>Aioria</li>
+       
+       <li>Shiryu</li>
+    
+    </ol>
+    
+* Una lista ordenada (ordered list - ol) con tres elementos (list items - li)
+
+---
+
+`<h2>Cabecera menos grande</h2>`
+
+`<h3>Cabecera 3</h3>`
+
+`<h4>Cabecera 4</h4>`
+
+`<h5>Cabecera 5</h5>`
+
+`<h6>Cabecera 6</h6>`
+
+* Cabeceras de distintos tamaños (h1 es la más grande y h6 es la más pequeña).
+
+---
+    
 13) Iniciamos un servidor HTTP en nuestro máquina, para ellos nos dirigimos a la carpeta donde está index.html, presionamos `SHIFT` y hacemos clic derecho para seleccionar *Abrir ventana de comandos aquí*.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/pag%201.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Comandos.png?raw=true" >
 </p>
 
 14) Ahora, escribimos los siguientes comandos
@@ -331,8 +418,7 @@ Código | Definición
 > http-server -c10
 
 
-15) Ahora en el navegador accedemos a nuestra página web mediante `localhost:8080 `. Los resultados son los siguientes.
-
+15) Ahora en el navegador accedemos a nuestra página web mediante `localhost:8080 `. Los resultados son los siguientes:
 <p align="center">
 <img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/pag%201.png?raw=true" >
 </p>
