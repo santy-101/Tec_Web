@@ -316,7 +316,22 @@ Código | Definición
 12) El código de la misma está disponible en [Código HTML](https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/index.html).
 * Para esta página se han utilizado los tags mostradas en el <a href="#Marco Teórico">Marco Teórico</a>.
 
-13) Abrimos este archivo utilizando Google Chrome. Los resultados son los siguientes.
+13) Iniciamos un servidor HTTP en nuestro máquina, para ellos nos dirigimos a la carpeta donde está index.html, presionamos `SHIFT` y hacemos clic derecho para seleccionar *Abrir ventana de comandos aquí*.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/pag%201.png?raw=true" >
+</p>
+
+14) Ahora, escribimos los siguientes comandos
+
+> npm install -g http-server
+
+* -g hace que la instalación sea global.
+
+> http-server -c10
+
+
+15) Ahora en el navegador accedemos a nuestra página web mediante `localhost:8080 `. Los resultados son los siguientes.
 
 <p align="center">
 <img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/pag%201.png?raw=true" >
