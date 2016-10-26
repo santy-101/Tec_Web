@@ -200,19 +200,19 @@ Código | Definición
 1) Primero abrimos el navegador Google Chrome y nos dirigimos a la URL [www.google.com.ec](www.google.com.ec)
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/Chrome.png?raw=true">
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Chrome.png?raw=true">
 </p>
 
 2) Luego, hacemos clic derecho y seleccionamos la pestaña `Inspeccionar`.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/Inspeccionar.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Inspeccionar.png?raw=true" >
 </p>
 
 3) Escogemos la pestaña `Network` y observaremos variedad de información.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/Recursos.png?raw=true " >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Recursos.png?raw=true " >
 </p>
 
 * Debajo de la columna Name encontraremos todos los recursos que deben cargarse para mostrar la página HTML.
@@ -240,17 +240,17 @@ Código | Definición
 3) Ahora, vamos a la pestaña `Elements`.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/Elements.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Elements.png?raw=true" >
 </p>
 
 4) En la parte superior, se muestra el código HTML de la página.
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/HTML.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/HTML.png?raw=true" >
 </p>
 
 5) En la parte inferior, podemos observar los Estilos de esta página.
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/Estilos.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Estilos.png?raw=true" >
 </p>
 
 * En este punto es posible modificar, por ejemplo, el color de fondo de algún elemento.
@@ -258,25 +258,25 @@ Código | Definición
     * También es posible utilizar notación de colores en HTML (#80BFFF para un tono de celeste).
     
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/Color.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Color.png?raw=true" >
 </p>
 
 6) Ahora, descargamos e instalamos la extensión de Postman en Google Chrome.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/Postman.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Postman.png?raw=true" >
 </p>
 
 7) La extensión se ve de la siguiente manera.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/Postman%202.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Postman%202.png?raw=true" >
 </p>
 
 8) Junto a la pestaña `GET` escribimos alguna URL. En este caso `www.google.com` y luego hacemos clic en `Send`.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/HTML%20Postman.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/HTML%20Postman.png?raw=true" >
 </p>
 
 * Actualmente, nos encontramos en la pestaña `Body`.
@@ -286,7 +286,7 @@ Código | Definición
 9) Ahora cambiamos a la pestaña `Headers`
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/Headers.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Headers.png?raw=true" >
 </p>
 
 * La mayoría de estos headers nos son desconocidos pero existen algunos que podemos entender.
@@ -297,7 +297,7 @@ Código | Definición
 10) Ahora cambiaremos la pestaña que dice `GET` por `POST`.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/Post.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Post.png?raw=true" >
 </p>
 
 * Observamos que el Status Code es 405 - Método No Permitido y que se ha tardado 158 ms.
@@ -305,11 +305,11 @@ Código | Definición
 11) Finalmente procederemos a crear una sencilla página web en HTML. Para ellos crearemos un nuevo documento llamado `index` de tipo html.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/Documento.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Documento.png?raw=true" >
 </p>
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/index.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/index.png?raw=true" >
 </p>
 
 
@@ -319,11 +319,11 @@ Código | Definición
 13) Abrimos este archivo utilizando Google Chrome. Los resultados son los siguientes.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/pag%201.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/pag%201.png?raw=true" >
 </p>
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/Im%C3%A1genes/pag%202.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/pag%202.png?raw=true" >
 </p>
 
 <br>
