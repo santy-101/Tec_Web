@@ -237,6 +237,17 @@ Código | Definición
     * Se transfirieron 79.5 KB.
     * El proceso terminó en 6.54 segundos.
     
+* Por otro lado, si hacemos clic en algún recurso (en este caso `www.google.com.ec`) se mostrará lo siguiente:
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Remote Address.png?raw=true" >
+</p>
+
+* La Request URL: `https://www.google.com.ec/`.
+* El Método de Request: `GET`.
+* El Status Code: 200.
+* La dirección remota y el puerto mediante el cual se accede a este recurso: *[2607:f8b0:4008:80a::2003]:443*
+    
 3) Ahora, vamos a la pestaña `Elements`.
 
 <p align="center">
