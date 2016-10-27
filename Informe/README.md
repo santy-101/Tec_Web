@@ -321,7 +321,9 @@ Código | Definición
 
 `<html lang="en" style="background-color:#3690a2;">` 
 * Lenguaje de la página: inglés. 
+
 * Color de fondo: #3690a2 (el azul que está a los bordes de la página)
+
 ---
 `<meta charset="UTF-8">`
 * Utilizamos codificación UTF-8.
@@ -357,7 +359,7 @@ Código | Definición
 ---
  `<p style="background-color:#97bcc3;">`
  
-* Un párrafo con fondo gris
+* Un párrafo con fondo gris.
 
 ---
 
@@ -371,7 +373,7 @@ Código | Definición
 
 `</ul>`
 
-* Una lista no ordenada (unordered list - ul) con tres elementos (list items - li)
+* Una lista no ordenada (unordered list - ul) con tres elementos (list items - li).
 
 ---
 
@@ -385,7 +387,7 @@ Código | Definición
     
     </ol>
     
-* Una lista ordenada (ordered list - ol) con tres elementos (list items - li)
+* Una lista ordenada (ordered list - ol) con tres elementos (list items - li).
 
 ---
 
@@ -435,9 +437,11 @@ Código | Definición
 * Se aprendieron conocimientos básicos sobre HTML y HTTP.
 * Se aprendió a utilizar Postman para observar cómo trabajan las páginas web cuando reciben peticiones.
 * Se aprendió a utilizar el navegador para observar la estructura de las páginas web.
+* Se aprendió a iniciar un servidor HTTP en Windows.
 * Se aprendió a crear una pequeña página web utilizando tags de HTML.
 * Se recomienda anotar los tópicos abarcados en la práctica para poder realizar el informe de mejor manera.
 * Se recomienda tomar capturas para poder anexarlas al informe.
+* Se recomienda realizar varios commits para observar cómo cambian los archivos.
 
 <br>
 <a href="#Cabecera">A la cabecera</a>
