@@ -37,11 +37,11 @@
 
 <a name="Objetivos"></a>
 ## Objetivos
-- Desarrollar el conocimiento Web
-- Conocer herramientas de desarrolladores web como: Postman
-- Aprender a utilizar tags básicos de HTML
-- Aprender el uso de lenguaje HTML CSS
-- Crear una página HTML básica
+- Desarrollar el conocimiento Web.
+- Conocer herramientas de desarrolladores web como: Postman.
+- Aprender a utilizar tags básicos de HTML.
+- Aprender el uso básico de lenguaje HTML CSS.
+- Crear una página HTML básica.
 <br>
 
 <a href="#Cabecera">A la cabecera</a>
@@ -52,7 +52,7 @@
 <a name="WWW"></a>
 ### World Wide Web
 
-En informática, la World Wide Web (WWW) o red informática mundial1 es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces. 
+En informática, la World Wide Web (WWW) o red informática mundial es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces. 
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web))
 <br>
 <a href="#Cabecera">A la cabecera</a>
@@ -94,11 +94,11 @@ HTML5	| 2014
 <img src="https://programacionweb1.files.wordpress.com/2015/03/dibujo.jpg?raw=true" >
 </p>
 
-* La declaración `<!DOCTYPE html>` define que el documento será HTML5
-* El elemento `<html>` es el elemento raíz de una página HTML
-* El elemento `<head>` contiene meta información sobre el documento
-* El elemento `<title>` especifica un título para el documento
-* El elemento `<body>` contiene el contenido visible de la página
+* La declaración `<!DOCTYPE html>` define que el documento será HTML5.
+* El elemento `<html>` es el elemento raíz de una página HTML.
+* El elemento `<head>` contiene meta información sobre el documento.
+* El elemento `<title>` especifica un título para el documento.
+* El elemento `<body>` contiene el contenido visible de la página.
 
 
 (Fuente: [W3Schools](http://www.w3schools.com/html/html_intro.asp))
@@ -134,7 +134,7 @@ Tag| Descripción
 <a name="CSS"></a>
 ### CSS
 
-* CSS significa Cascading Style Sheets (Hojas de estilo en cascada)
+* CSS significa Cascading Style Sheets (Hojas de estilo en cascada).
 * CSS describe cómo los elementos HTML deben mostrarse en pantalla, papel u otra media.
 * CSS puede controlar el diseño de múltiples páginas web al mismo tiempo.
 * Un CSS inline es usado para aplicar un estilo único a un solo elemento HTML.
@@ -197,7 +197,7 @@ Código | Definición
 <a name="Desarrollo"></a>
 ## Desarrollo de la práctica
 
-1) Primero abrimos el navegador Google Chrome y nos dirigimos a la URL [www.google.com.ec](www.google.com.ec)
+1) Primero abrimos el navegador Google Chrome y nos dirigimos a la URL [www.google.com.ec](www.google.com.ec).
 
 <p align="center">
 <img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Chrome.png?raw=true">
@@ -283,7 +283,7 @@ Código | Definición
 * Observamos en la parte central derecha que el Status Code devuelto es 200 (la petición ha sido exitosa) y que se ha tardado 956 ms.
 * Por otro lado, se observa el código HTML.
 
-9) Ahora cambiamos a la pestaña `Headers`
+9) Ahora cambiamos a la pestaña `Headers`.
 
 <p align="center">
 <img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Headers.png?raw=true" >
@@ -322,7 +322,7 @@ Código | Definición
 `<html lang="en" style="background-color:#3690a2;">` 
 * Lenguaje de la página: inglés. 
 
-* Color de fondo: #3690a2 (el azul que está a los bordes de la página)
+* Color de fondo: #3690a2 (el azul que está a los bordes de la página).
 
 ---
 `<meta charset="UTF-8">`
