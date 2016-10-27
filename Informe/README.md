@@ -313,7 +313,7 @@ Código | Definición
 </p>
 
 
-12) El código de la misma está disponible en [Código HTML](https://github.com/santy-101/Tec_Web/blob/Informe-1/Informe%201/index.html).
+12) El código de la misma está disponible en [Código HTML](https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/index.html).
 * Para esta página se han utilizado los tags mostradas en el <a href="#Marco Teórico">Marco Teórico</a>.
 
 ---
