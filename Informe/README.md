@@ -240,7 +240,7 @@ Código | Definición
 * Por otro lado, si hacemos clic en algún recurso (en este caso `www.google.com.ec`) se mostrará lo siguiente:
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Remote Address.png?raw=true" >
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Remote%20Address.png?raw=true" >
 </p>
 
 * La Request URL: `https://www.google.com.ec/`.
@@ -449,7 +449,7 @@ Código | Definición
 * Se aprendió a utilizar Postman para observar cómo trabajan las páginas web cuando reciben peticiones.
 * Se aprendió a utilizar el navegador para observar la estructura de las páginas web.
 * Se aprendió a iniciar un servidor HTTP en Windows.
-* Se aprendió a crear una pequeña página web utilizando tags de HTML.
+* Se aprendió a crear una pequeña página web utilizando tags de HTML y CSS.
 * Se recomienda anotar los tópicos abarcados en la práctica para poder realizar el informe de mejor manera.
 * Se recomienda tomar capturas para poder anexarlas al informe.
 * Se recomienda realizar varios commits para observar cómo cambian los archivos.
