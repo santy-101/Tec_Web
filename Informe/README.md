@@ -1,4 +1,4 @@
-# INTRODUCCIÓN A LA WEB
+# CSS
 ---
 
 ### Materia: `Tecnologías Web con JavaScript`
@@ -29,7 +29,7 @@
 <a name="Objetivos"></a>
 ## Objetivos
 - Desarrollar el conocimiento Web.
-- Conocer herramientas de desarrolladores web como: Postman.
+- Utilizar recursos CSS obtenidos del framework Bootstrap.
 - Aprender a utilizar tags básicos de HTML.
 - Aprender el uso básico de lenguaje HTML CSS.
 - Crear una página HTML básica.
@@ -47,12 +47,43 @@
 * CSS significa Cascading Style Sheets (Hojas de estilo en cascada).
 * CSS describe cómo los elementos HTML deben mostrarse en pantalla, papel u otra media.
 * CSS puede controlar el diseño de múltiples páginas web al mismo tiempo.
-* Un CSS inline es usado para aplicar un estilo único a un solo elemento HTML.
+* CSS puede ser añadido a elementos HTML de 3 maneras: 
+    * Inline: usando el atributo `style` en elementos HTML.
+    * Internal: usando un elemento `<style>` en la sección `<head>`.
+    * External: usando un archivo CSS externo.
+    
+* Inline CSS
+    * Un CSS inline es usado para aplicar un estilo único a un solo elemento HTML.
     * Utiliza el atributo `style` de un elemento HTML.
-    * Por ejemplo, pordemos cambiar el color de texto del elemento `<h1>` a azul:
+    * Por ejemplo, podemos cambiar el color de texto del elemento `<h1>` a azul:
     
         `<h1 style="color:blue;">Este texto irá en azul</h1>`
+        
+* Internal CSS
+    * Un internal CSS es usando para definir un estilo para una sola página HTML.
+    * Es definido en la sección `<head>` de una página HTML dentro de elemento `<style>`.
+    * Así:
+    
+            <head>
+                <style>
+                    body {background-color: powderblue;}
+                    h1   {color: blue;}
+                    p    {color: red;} 
+                </style>
+            </head>
 
+* External CSS
+    * Un hoja de estilos externa es usada para definir el estilo de muchas páginas HTML.
+    * No debe contener nada de código HTML y debe ser guardada con una extensión .css.
+    * Para usar una hoja de estilos externa, se añada un link en la sección `/head>`de la página HTML.
+    
+    `<head>`
+
+    `<link rel="stylesheet" href="styles.css">`
+
+    `</head>`
+    
+    
 (Fuente: [W3Schools](http://www.w3schools.com/html/html_css.asp))
 <br>
 <a href="#Cabecera">A la cabecera</a>
