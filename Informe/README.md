@@ -75,15 +75,12 @@
 * External CSS
     * Un hoja de estilos externa es usada para definir el estilo de muchas páginas HTML.
     * No debe contener nada de código HTML y debe ser guardada con una extensión .css.
-    * Para usar una hoja de estilos externa, se añada un link en la sección `/head>`de la página HTML.
+    * Para usar una hoja de estilos externa, se añada un link en la sección `/head>` de la página HTML.
     
-    `<head>`
+        `<head>`
+            <link rel="stylesheet" href="styles.css">
+        `</head>`
 
-    `<link rel="stylesheet" href="styles.css">`
-
-    `</head>`
-    
-    
 (Fuente: [W3Schools](http://www.w3schools.com/html/html_css.asp))
 <br>
 <a href="#Cabecera">A la cabecera</a>
@@ -93,6 +90,29 @@
 <a name="Desarrollo"></a>
 ## Desarrollo de la práctica
 
+* Para esta práctica, crearemos un archivo *index.html* y lo modificaremos varias veces.
+
+1) Utilizaremos Internal CSS, para ella crearemos un tag `style` dentro `head`.
+
+
+```html
+    <head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo CSS</title>
+    <style>
+        html{
+            
+            background-color: azure;    
+        }
+        
+        body{
+            
+            background-color:beige
+        }
+        
+    </style>
+</head>
+```
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
