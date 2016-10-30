@@ -119,7 +119,7 @@
 ```
 * Todo el documento HTML ahora tiene fondo azul cielo.
 
-2) Ahora modificaremos el archivo para usar clases y tags globales.
+2) Ahora modificaremos el archivo para usar clases e Internal CSS.
 
 
 ```html
@@ -189,8 +189,24 @@
 
 ```
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Chrome.png?raw=true">
+<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/Clases.png?raw=true">
 </p>
+
+* Observamos que el documento HTML tiene en su estilo un fondo azure.
+* El cuerpo es beige.
+* Todos los h1 tienen un Internal CSS que los hace tener un fondo verde.
+    * Por tanto, *Hola*, *Amigos*, y *Amigos Poli* tienen fondo verde.
+* Todos los párrafos deberían tener un fondo gris. Sin embargo, las clases hacen que esto cambie.
+* Todos los elementos que pertenezcan a la clase *.nombreClaseRojo* tendrán fondo rojo.
+* Todos los elementos que pertenezcan a la clase *.nombreClaseAzul* tendrán fondo azul.
+* Todos los elementos que pertenezcan a la clase *.nombreClaseAmarillo* tendrán fondo amarillo.
+    * Es por esto que a pesar de que los párrafos debería mostrarse con fondo gris, tenemos párrafos con otros colores.
+        * El *Párrafo rojo* pertenece a la *nombreClaseRojo* y por eso su fondo es rojo.
+        * El *Párrafo azul* pertenece a la *nombreClaseAzul* y por eso su fondo es azul.
+        * El *Párrafo amarillo* pertenece a la *nombreClaseAmarillo* y por eso su fondo es amarillo.
+    * El *Párrafo sin clase* no tiene clase y por tanto tendrá fondo gris debido al Internal CSS.
+        
+    
 
 
 <br>
