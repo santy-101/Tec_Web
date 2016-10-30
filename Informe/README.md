@@ -16,7 +16,7 @@
 - <a href="#Objetivos">Objetivos</a>
 - <a href="#Marco Teórico">Marco Teórico</a>
   * <a href="#CSS">CSS</a>
-  * <a href="#Bootstrap">CSS</a>
+  * <a href="#Bootstrap">Bootstrap</a>
 - <a href="#Desarrollo">Desarrollo de la Práctica</a>
 - <a href="#Conclusiones y Recomendaciones">Conclusiones y Recomendaciones</a> 
 
@@ -396,6 +396,111 @@
 <img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/NuevasColumnas.png?raw=true">
 </p>
 
+7) Si deseamos que las filas y columnas tengan bordes podemos hacer uso del tag `style` y crear una clase `.borde` en donde indiquemos que deseamos un borde de color negro sólido y de 2 pixeles de ancho.
+
+```html
+ <style>
+        .borde {
+            border: black solid 2px;
+        }
+    </style>
+```
+8) Finalmente, utilizamos columnas de distintos ancho y tamaño para observar cómo se comportan al disminuir el ancho de la página.
+
+```html
+<h1>Fila 1</h1>
+
+            <!--            md en 990 pixeles se hace pequeño-->
+            <div class="col-md-4 borde">
+                <h2>Columna md 4 - 1</h2>
+            </div>
+            <div class="col-md-4 borde">
+                <h2>Columna md 4 - 2</h2>
+            </div>
+            <div class="col-md-4 borde">
+                <h2>Columna md 4 - 3</h2>
+            </div>
+```
+* En la fila 1, lo único que se añadido es un borde a cada una de las columnas
+* Las columnas `md` cambian de posición cuando el ancho es de 990 pixeles.
+
+```html
+        </div>
+        <div class="row" style="background-color:purple;">
+            <h1>Fila 2</h1>
+
+            <!--            .col-sm-3.borde*4>h3 Emmet-->
+            <!--            sm en 770 pixeles se hace pequeño-->
+
+            <div class="col-sm-3 borde">
+                <h3>CSM3 -1</h3>
+            </div>
+            <div class="col-sm-3 borde">
+                <h3>CSM3 -2</h3>
+            </div>
+            <div class="col-sm-3 borde">
+                <h3>CSM3 -3</h3>
+            </div>
+            <div class="col-sm-3 borde">
+                <h3>CSM3 -4</h3>
+            </div>
+   </div>
+```
+* En la fila 2, tenemos 4 columnas de ancho 3 (3*4=12).
+* Estas filas pertenecen a la clase `sm`.
+* Las columnas `sm` cambian de posición cuando el ancho es de 770 pixeles.
+
+```html
+        <div class="row" style="background-color:red;">
+
+            <h1>Fila3</h1>
+
+            <!--          .col-lg-6.borde*2>h3 EMMET -->
+
+            <div class="col-lg-6 borde">
+                <h3>CLG6 - 1</h3>
+            </div>
+            <div class="col-lg-6 borde">
+                <h3>CLG6 - 2</h3>
+            </div>
+
+        </div>
+
+```
+* En la fila 3, tenemos 2 columnas de ancho 6 (2*6=12).
+* Estas filas pertenecen a la clase `lg`.
+* Las columnas `lg` cambian de posición cuando el ancho es de 1200 pixeles.
+
+```html
+        <!--      .row>.col-xs-2.borde+.col-xs-5.borde*2-->
+        <div class="row">
+
+            <h1>Fila4</h1>
+            <div class="col-xs-2 borde">
+                <h2>CXS2 - 1</h2>
+            </div>
+            <div class="col-xs-5 borde">
+                <h2>CXS5 - 2</h2>
+            </div>
+            <div class="col-xs-5 borde">
+                <H2>CXS5 - 3</H2>
+            </div>
+        </div>
+
+```
+* En la fila 4, tenemos una columna de ancho 2 y dos columnas de ancho 5 (2+5*2=12).
+* Estas filas pertenecen a la clase `xs`.
+* Las columnas `xs` no cambian de posición
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/XS.png?raw=true">
+</p>
+
+* Si modificamos el tamaño de la página, observamos los cambios.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/XS2.png?raw=true">
+</p>
 
 <br>
 <a href="#Cabecera">A la cabecera</a>
