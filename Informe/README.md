@@ -117,7 +117,80 @@
     </style>
 </head>
 ```
+* Todo el documento HTML ahora tiene fondo azul cielo.
 
+2) Ahora modificaremos el archivo para usar clases y tags globales.
+
+
+```html
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo CSS</title>
+    <style>
+       
+        html{
+            
+            background-color: azure;
+            
+        }
+        
+        body{
+            
+            background-color:beige;
+        }
+        
+        h1{
+            background-color:#a2b42b;
+        }
+        
+        p{
+            background-color: dimgrey;
+        }
+        
+        
+        /* 
+        CLASES
+        
+        .nombreClase
+        {
+        
+        }
+        */
+        
+        .nombreClaseRojo  {
+             background-color:red;
+        }
+        
+          .nombreClaseAzul  {
+             background-color:blue;
+        }
+        
+          .nombreClaseAmarillo  {
+             background-color:yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Hola</h1>
+<p class="nombreClaseRojo">Párrafo rojo</p>
+<h1>Amigos</h1>
+<p class="nombreClaseAzul">Párrafo azul</p>
+<h1>Amigos Poli</h1>
+<p class="nombreClaseAmarillo">Párrafo Amarillo</p>
+
+<p>Párrafo sin clase</p>
+
+</body>
+
+</html>
+
+```
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/01-HTML/Informe/Im%C3%A1genes/Chrome.png?raw=true">
+</p>
 
 
 <br>
