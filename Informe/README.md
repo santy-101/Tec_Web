@@ -357,7 +357,44 @@
         * La tercer fila tiene fondo rojo.
 * Finalmente *Hola estoy dentro del DIV tendrá fondo amarillo porque pertenece al `container` con este estilo.
 
-6) 
+6) En cada una de las filas podemos crear columnas dinámicas cuyo ancho sume 12.
+* Dependiendo del tipo de columna estas se colocaran de arriba hacia abajo tomando en cuenta el ancho de la página.
+
+```html
+ <div class="row" style="background-color:green;">
+            
+            
+<!--            .col-md-4*3>h2 Emmet-->
+
+            <h1>Fila 1</h1>
+            <div class="col-md-4">
+                <h2>Columna md 4 - 1</h2>
+            </div>
+            <div class="col-md-4">
+                <h2>Columna md 4 - 2</h2>
+            </div>
+            <div class="col-md-4">
+                <h2>Columna md 4 - 3</h2>
+            </div>
+            
+
+        </div>
+```
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/Columnas.png?raw=true">
+</p>
+
+* En la fila 1 tenemos 3 columnas cuyo ancho es 4 y por tanto suman 12.
+* La clase a la que pertenecen es `col-md-4`.
+    * Columnas de tamaño medio y ancho 4.
+    
+    
+* Al reducir el ancho de la página, observamos como las columnas cambian de posición.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/NuevasColumnas.png?raw=true">
+</p>
 
 
 <br>
