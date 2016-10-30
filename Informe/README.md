@@ -16,7 +16,7 @@
 - <a href="#Objetivos">Objetivos</a>
 - <a href="#Marco Teórico">Marco Teórico</a>
   * <a href="#CSS">CSS</a>
-
+  * <a href="#Bootstrap">CSS</a>
 - <a href="#Desarrollo">Desarrollo de la Práctica</a>
 - <a href="#Conclusiones y Recomendaciones">Conclusiones y Recomendaciones</a> 
 
@@ -89,7 +89,15 @@
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
+<a name="Bootstrap"></a>
+### Bootstrap
 
+* Bootstrap es el framework HTML, CSS y JS más popular para desarrollar proyectos móbiles responsivos en la web.
+* Gracias a Bootstrap escalar sitios web y aplicaciones  de teléfonos a tabletas y computadores de escritorio es fácil y eficiente.
+
+(Fuente: [Bootstrap](http://getbootstrap.com/))
+<br>
+<a href="#Cabecera">A la cabecera</a>
 
 <a name="Desarrollo"></a>
 ## Desarrollo de la práctica
@@ -335,7 +343,7 @@
 ```
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/ID.png?raw=true">
+<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/DIV.png?raw=true">
 </p>
 
 
@@ -343,11 +351,13 @@
     * *Hola* es el primer elemento con este nuevo formato, pero no tiene asignado ningún color de fondo.
 * Luego se crea un `div` cuya clase es `container` y cuyo fondo será amarrillo.
 * Dentro de este contenedor tenemos 3 `div` que pertenecen a la clase `row`.
-    * Estas filas deberían tener fondo amarillo pero debido al diseño cascada, cada uno tendrá distintos fondos.
+    * Estas filas deberían tener fondo amarillo pero debido al diseño cascada, cada una tendrá distintos fondos.
         * La primera fila (row) tiene fondo verde.
         * La segunda fila tiene fondo azul.
         * La tercer fila tiene fondo rojo.
 * Finalmente *Hola estoy dentro del DIV tendrá fondo amarillo porque pertenece al `container` con este estilo.
+
+6) 
 
 
 <br>
