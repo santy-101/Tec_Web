@@ -421,7 +421,7 @@
                 <h2>Columna md 4 - 3</h2>
             </div>
 ```
-* En la fila 1, lo único que se añadido es un borde a cada una de las columnas
+* En la fila 1, lo único que se añadido es un borde a cada una de las columnas.
 * Las columnas `md` cambian de posición cuando el ancho es de 990 pixeles.
 
 ```html
@@ -496,11 +496,13 @@
 <img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/XS.png?raw=true">
 </p>
 
-* Si modificamos el tamaño de la página, observamos los cambios.
+* Si modificamos el tamaño de la página, observamos los cambios de acuerdo al caso.
 
 <p align="center">
 <img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/XS2.png?raw=true">
 </p>
+
+* Este archivo HTML está disponible en [Archivo HTML](http://getbootstrap.com/)
 
 <br>
 <a href="#Cabecera">A la cabecera</a>
