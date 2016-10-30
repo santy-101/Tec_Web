@@ -201,13 +201,71 @@
 * Todos los elementos que pertenezcan a la clase *.nombreClaseAzul* tendrán fondo azul.
 * Todos los elementos que pertenezcan a la clase *.nombreClaseAmarillo* tendrán fondo amarillo.
     * Es por esto que a pesar de que los párrafos debería mostrarse con fondo gris, tenemos párrafos con otros colores.
-        * El *Párrafo rojo* pertenece a la *nombreClaseRojo* y por eso su fondo es rojo.
-        * El *Párrafo azul* pertenece a la *nombreClaseAzul* y por eso su fondo es azul.
-        * El *Párrafo amarillo* pertenece a la *nombreClaseAmarillo* y por eso su fondo es amarillo.
+        * El *Párrafo rojo* pertenece a *nombreClaseRojo* y por eso su fondo es rojo.
+        * El *Párrafo azul* pertenece a *nombreClaseAzul* y por eso su fondo es azul.
+        * El *Párrafo amarillo* pertenece a *nombreClaseAmarillo* y por eso su fondo es amarillo.
     * El *Párrafo sin clase* no tiene clase y por tanto tendrá fondo gris debido al Internal CSS.
         
-    
+ 3) No es recomendable mantener los estilos dentro del mismo archivo HTML, por tanto, vamos a crear un archivo llamado *estilos.css*.
+ 
+ ```html
+ html{
+            
+            background-color: azure;
+            
+        }
+        
+        body{
+            
+            background-color:beige;
+        }
+        
+        h1{
+            background-color:#a2b42b;
+        }
+        
+        p{
+            background-color: dimgrey;
+        }
+        
+        /*    POR ID
+        */
 
+        #parrafoFucsia
+        {
+              background-color:deeppink;
+        }
+        
+        #cualquiera
+        {
+               background-color:gray;
+        }
+
+ ```
+ * Observamos que hemos añadido otra forma de manejar los estilos, POR ID
+    * Todos los elementos cuyo ID sea *parrafoFucsia* tendrán fondo fucsia.
+    * Todos los elementos con ID *cualquiera* tendrán fondo gris.
+    
+* Para poder enlazar el documento HTML al CSS debemos añadir un link en el tag `head`.
+
+ ```html
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+ ```
+ * En este caso, el documento se encuentra dentro de la misma carpeta.
+ * Si queremos acceder a carpetas más internas, simplemente usamos el signo `/`.
+    * Carpeta/archivo.css
+    * Carpeta/OtraCarpeta/archivo.css
+    * No es posible acceder a carpetas externas.
+ * Es importante tomar en cuenta que los estilos que tome el documento HTML seguirán el método cascada.
+    * El último .css será el que sobrescriba, de ser el caso, los estilos pertinentes.
+    
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/ID.png?raw=true">
+</p>
 
 <br>
 <a href="#Cabecera">A la cabecera</a>
