@@ -242,7 +242,7 @@
         }
 
  ```
- * Observamos que hemos añadido otra forma de manejar los estilos, POR ID
+ * Observamos que hemos añadido otra forma de manejar los estilos, por ID.
     * Todos los elementos cuyo ID sea *parrafoFucsia* tendrán fondo fucsia.
     * Todos los elementos con ID *cualquiera* tendrán fondo gris.
     
@@ -263,10 +263,30 @@
  * Es importante tomar en cuenta que los estilos que tome el documento HTML seguirán el método cascada.
     * El último .css será el que sobrescriba, de ser el caso, los estilos pertinentes.
     
+```html
+<body>
+
+    <h1>Hola</h1>
+    <p class="nombreClaseRojo">Párrafo rojo</p>
+    <h1 class="nombreClaseAmarillo">Amigos</h1>
+    <p class="nombreClaseAzul">Párrafo azul</p>
+    <h1>Amigos Poli</h1>
+    <p id="parrafoFucsia" class="nombreClaseAmarillo">Párrafo Amarillo</p>
+    <p>Párrafo sin clase</p>
+
+</body>
+```
+
 <p align="center">
 <img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/ID.png?raw=true">
 </p>
 
+* *Hola* y *Amigos Poli* siguen teniendo fondo verde.
+* Sin embargo, *Amigos* pertenece a *nombreClaseAmarillo* y por tanto su fondo es amarillo.
+* *Párrafo rojo* y *Párrafo azul* mantienen sus colores originales.
+* Pero ahora observamos que *Párrafo amarillo* tiene fondo fucsia.
+    * Esto se debe a que su ID es *parrafoFucsia* y este tiene prioridad sobre su clase.
+* *Párrafo sin clase* sigue siendo gris debido al Internal CSS.
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
