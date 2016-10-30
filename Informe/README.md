@@ -32,6 +32,7 @@
 - Utilizar recursos CSS obtenidos del framework Bootstrap.
 - Aprender a utilizar tags básicos de HTML.
 - Aprender el uso básico de lenguaje HTML CSS.
+- Aprender a utilizar grids en páginas HTML.
 - Crear una página HTML básica.
 <br>
 
@@ -502,7 +503,7 @@
 <img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/XS2.png?raw=true">
 </p>
 
-* Este archivo HTML está disponible en [Archivo HTML](http://getbootstrap.com/)
+* Este archivo HTML está disponible en [Archivo HTML](https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/index.html).
 
 <br>
 <a href="#Cabecera">A la cabecera</a>
@@ -513,8 +514,9 @@
 * Se aprendió a utilizar CSS para mejorar la apariencia de las páginas Web HTML.
 * Se aprendió a utilizar CSS almacenados en línea para obtener formatos ya predefinidos.
 * Se aprendió a crear hojas de estilo .css y referenciarlas desde un archivo HTML.
+* Se aprendió a utilizar grids para facilitar la ubicación de elementos en la página.
 * Se recomienda separar los archivos HTML y los archivos CSS para un mejor manejo de la página web que se está desarrollando.
-* Se recomienda utilizar colores que faciliten la lectura de nuestras páginas web.
+* Se recomienda utilizar colores y diseños que faciliten la lectura de nuestras páginas web.
 
 <br>
 <a href="#Cabecera">A la cabecera</a>
