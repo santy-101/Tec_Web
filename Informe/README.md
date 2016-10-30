@@ -208,7 +208,7 @@
         
  3) No es recomendable mantener los estilos dentro del mismo archivo HTML, por tanto, vamos a crear un archivo llamado *estilos.css*.
  
- ```html
+ ```css
  html{
             
             background-color: azure;
@@ -287,6 +287,69 @@
 * Pero ahora observamos que *Párrafo amarillo* tiene fondo fucsia.
     * Esto se debe a que su ID es *parrafoFucsia* y este tiene prioridad sobre su clase.
 * *Párrafo sin clase* sigue siendo gris debido al Internal CSS.
+
+4) Ahora vamos a utilizar un External CSS provisto por Bootstrap.
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Referenciar archivos de estilo-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  
+</head>
+```
+
+5) Ahora usaremos el tag `<div>`para definir divisiones o secciones en un documento HTML.
+
+```html
+<body>
+
+    <h1>Hola</h1>
+    <!--    .container-->
+    <div class="container" style="background-color:yellow;">
+
+        <!--    .row*3    -->
+
+        <div class="row" style="background-color:green;">
+            <h1>Fila 1</h1>
+
+        </div>
+        <div class="row" style="background-color:blue;">
+            <h1>Fila 2</h1>
+
+        </div>
+        <div class="row" style="background-color:red;">
+            <h1>Fila 3</h1>
+            
+        </div>
+
+     <h1>Hola estoy dentro del DIV</h1>
+    </div>
+</body>
+```
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/ID.png?raw=true">
+</p>
+
+
+* Primero, observamos que todos los textos tienen un nuevo tipo y tamaño de letra, provistos por Bootstrap.
+    * *Hola* es el primer elemento con este nuevo formato, pero no tiene asignado ningún color de fondo.
+* Luego se crea un `div` cuya clase es `container` y cuyo fondo será amarrillo.
+* Dentro de este contenedor tenemos 3 `div` que pertenecen a la clase `row`.
+    * Estas filas deberían tener fondo amarillo pero debido al diseño cascada, cada uno tendrá distintos fondos.
+        * La primera fila (row) tiene fondo verde.
+        * La segunda fila tiene fondo azul.
+        * La tercer fila tiene fondo rojo.
+* Finalmente *Hola estoy dentro del DIV tendrá fondo amarillo porque pertenece al `container` con este estilo.
+
+
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
