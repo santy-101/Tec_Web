@@ -64,6 +64,7 @@
     * Es definido en la sección `<head>` de una página HTML dentro de elemento `<style>`.
     * Así:
     
+```html
             <head>
                 <style>
                     body {background-color: powderblue;}
@@ -71,15 +72,18 @@
                     p    {color: red;} 
                 </style>
             </head>
+```
 
 * External CSS
     * Un hoja de estilos externa es usada para definir el estilo de muchas páginas HTML.
     * No debe contener nada de código HTML y debe ser guardada con una extensión .css.
     * Para usar una hoja de estilos externa, se añada un link en la sección `/head>` de la página HTML.
     
-        `<head>`
+```html
+        <head>
             <link rel="stylesheet" href="styles.css">
-        `</head>`
+        </head>
+```
 
 (Fuente: [W3Schools](http://www.w3schools.com/html/html_css.asp))
 <br>
@@ -102,17 +106,20 @@
     <style>
         html{
             
-            background-color: azure;    
+            background-color: skyblue;    
         }
         
         body{
             
-            background-color:beige
+            background-color:aquamarine;
         }
         
     </style>
 </head>
 ```
+
+
+
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
