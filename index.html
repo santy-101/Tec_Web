@@ -104,10 +104,18 @@
                     nombre: 'Carlos',
                     apellido: 'Lema'
                 }],
-            
-          getNombre:  function() {
-            return santy.nombre;
-        }
+
+            getNombre: function () {
+                return this.nombre;
+            },
+            getApellido: function () {
+                return this.apellido;
+            },
+
+            setApellido: function (nuevoApellido) {
+                this.apellido = nuevoApellido;
+            }
+
         }
 
 
@@ -119,10 +127,13 @@
         console.log('Acceder Hermanos');
         console.log(santy.hermanos);
 
-        
-        
-           console.log(santy.getNombre());
 
+
+        console.log(santy.getNombre());
+        console.log(santy.getApellido());
+
+        santy.setApellido('Orquera');
+        console.log(santy.getApellido());
 
         //console.log(santy);
     </script>
