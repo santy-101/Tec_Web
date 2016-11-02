@@ -163,6 +163,26 @@
 * Las variables null son *null*.
 * Las variables undefined son *undefined*.
 
+4) En JS no es necesario hacer ningún tipo de *cast* para cambiar el tipo de una variable.
+
+```javascript
+        var textoNumero="2";
+        console.log('Valor cuando es string');
+        console.log(textoNumero);
+        
+        textoNumero=2;
+        console.log('Valor cuando es número');
+        console.log(textoNumero);
+```
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Cast.png?raw=true">
+</p>
+
+* *textoNumero* es de tipo String y es igual a 2 (string 2).
+* Luego, se convierte en un entero igual a 2.
+    * Se observa que el tipo se cambia automáticamente al realizar la nueva asignación.
+    
+    
 * Este archivo HTML está disponible en [Archivo HTML](https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/index.html).
 
 <br>
