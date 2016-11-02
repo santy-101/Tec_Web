@@ -182,7 +182,47 @@
 * Luego, se convierte en un entero igual a 2.
     * Se observa que el tipo se cambia automáticamente al realizar la nueva asignación.
     
-    
+5) Para utilizar arreglos en JS, se debe utilizar el siguiente formato:
+
+```javascript
+var nombreDelArreglo = [valor1, valor2,..., valorN ];
+```
+* El siguiente código contiene la creación de arreglos de distintos tipos.
+
+```javascript
+        var arregloString = ['Hola', '2', '5'];
+        console.log(arregloString);
+        
+        var arregloNumeros= [1, 2, 3];
+        console.log(arregloNumeros);
+        
+        var arregloFloat = [1.3, 2.15, 0.84];
+        console.log(arregloFloat);
+        
+         var arregloBooleano = [false,true,true];
+        console.log(arregloBooleano);
+        
+        var arregloNull = [null,null,null];
+        console.log(arregloNull);
+        
+        var arregloUndefined= [undefined,undefined,undefined];
+        console.log(arregloUndefined);
+        
+        var arregloTodo = ["Nombre", 123, 3.1416, true, false, undefined, null, "Apellido"];
+        console.log(arregloTodo);
+        
+         console.log('Longitud de arregloTodo');
+        console.log(arregloTodo.length);
+```
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Arreglos.png?raw=true">
+</p>
+
+* Se observa que es posible crear arreglos cuyas variables sean de distintos tipos.
+* Por otro lado, para acceder a la longitud de un arreglo se utiliza la propiedad *length*.
+
+
 * Este archivo HTML está disponible en [Archivo HTML](https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/index.html).
 
 <br>
