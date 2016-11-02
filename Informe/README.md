@@ -16,6 +16,7 @@
 - <a href="#Objetivos">Objetivos</a>
 - <a href="#Marco Teórico">Marco Teórico</a>
   * <a href="#JavaScript">JavaScript</a>
+  * <a href="#ECMAScript">ECMAScript</a>
 
 - <a href="#Desarrollo">Desarrollo de la Práctica</a>
 - <a href="#Conclusiones y Recomendaciones">Conclusiones y Recomendaciones</a> 
@@ -33,7 +34,7 @@
 - Aprender a crear vectores en JavaScript.
 - Aprender a utilizar objetos en JavaScript.
 - Crear funciones básicas en JavaScript.
-- 
+- Utilizar la consola del navegador para observar los resultados de la programación en JavaScript.
 <br>
 
 <a href="#Cabecera">A la cabecera</a>
@@ -45,13 +46,26 @@
 <a name="JavaScript"></a>
 ### JavaScript
 
-* 
+* JavaScript (a veces abreviado como JS) es un lenguaje ligero e interpretado, orientado a objetos con  funciones de primera clase, más conocido como el lenguaje de script para páginas web, pero también usado en muchos entornos sin navegador.
+* Es un lenguaje script multi-paradigma, basado en prototipos,  dinámico, soporta estilos de programación funcional, orientada a objetos e imperativa.
+* El estándar de JavaScript es ECMAScript. Desde el 2012, todos los navegadores modernos soportan completamente ECMAScript 5.1. Los navegadores más antiguos soportan por lo menos ECMAScript 3.
 
-(Fuente: [W3Schools](http://www.w3schools.com/html/html_css.asp))
+
+(Fuente: [MDN](https://developer.mozilla.org/es/docs/Web/JavaScript))
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
+<a name="ECMAScript"></a>
+### ECMAScript
 
+* ECMAScript es una especificación de lenguaje de programación publicada por ECMA International. El desarrollo empezó en 1996 y estuvo basado en el popular lenguaje JavaScript propuesto como estándar por Netscape Communications Corporation. 
+* Actualmente está aceptado como el estándar ISO 16262.
+* ECMAScript define un lenguaje de tipos dinámicos ligeramente inspirado en Java y otros lenguajes del estilo de C. Soporta algunas características de la programación orientada a objetos mediante objetos basados en prototipos y pseudoclases.
+* Desde el lanzamiento en junio de 1997 del estándar ECMAScript 1, han existido las versiones 2, 3 y 5, que es la más usada actualmente (la 4 se abandonó). En junio de 2015 se cerró y publicó la versión ECMAScript 6.
+
+(Fuente: [Wikipedia](https://es.wikipedia.org/wiki/ECMAScript))
+<br>
+<a href="#Cabecera">A la cabecera</a>
 <a name="Desarrollo"></a>
 ## Desarrollo de la práctica
 
