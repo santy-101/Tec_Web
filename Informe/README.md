@@ -222,7 +222,7 @@ var nombreDelArreglo = [valor1, valor2,..., valorN ];
 * Se observa que es posible crear arreglos cuyas variables sean de distintos tipos.
 * Por otro lado, para acceder a la longitud de un arreglo se utiliza la propiedad *length*.
 
-6) Para crear *objetos* se utiliza el siguiente formato:
+6) Para crear **objetos** se utiliza el siguiente formato:
 
 ```javascript
 
@@ -337,7 +337,7 @@ console.log(santy.getApellido());
 * Se aprendió a utilizar vectores con elementos de distintos tipos.
 * Se aprendió a crear objetos con sus respectivas funciones.
 * A pesar de que no es obligatorio, se recomienda utilizar `;` en favor de mantener el estándar.
-* Se recomienda 
+* Se recomienda utilizar la consola para verificar que nuestra programación sea correcta.
 
 
 <br>
