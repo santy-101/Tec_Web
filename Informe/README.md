@@ -70,8 +70,37 @@
 ## Desarrollo de la práctica
 
 * Para esta práctica, crearemos un archivo *index.html* y lo modificaremos varias veces.
+* Todo código JS debe encontrarse entre los tags `<script> </script>`.
 
-1) 
+1) Primero, vamos a crear una ventana de alerta que se mostrará en el navegador y además un mensaje en consola.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    alert('Hola');
+    console.log('Hola desde la consola');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+```
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/XS2.png?raw=true">
+</p>
+
+* `alert()` es una función que muestra el mensaje de alerta y recibe un parámetro que es el texto de la alerta.
+* `console.log()` muestra en consola los parámetros que recibe.
+
+2) Para observar la consola del navegador, hacemos clic derecho sobre el mismo, luego seleccionamos la pestaña *Inspeccionar* seguido de la pestaña *Console*.
+
+
+
 
 <p align="center">
 <img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/XS2.png?raw=true">
