@@ -6,31 +6,33 @@
     <title>Document</title>
     <script>
         // alert('Hola');
-        
-        var arregloString = ['Hola', '2', '5'];
-        console.log(arregloString);
-        
-        var arregloNumeros= [1, 2, 3];
-        console.log(arregloNumeros);
-        
-        var arregloFloat = [1.3, 2.15, 0.84];
-        console.log(arregloFloat);
-        
-         var arregloBooleano = [false,true,true];
-        console.log(arregloBooleano);
-        
-        var arregloNull = [null,null,null];
-        console.log(arregloNull);
-        
-        var arregloUndefined= [undefined,undefined,undefined];
-        console.log(arregloUndefined);
-        
-        var arregloTodo = ["Nombre", 123, 3.1416, true, false, undefined, null, "Apellido"];
-        console.log(arregloTodo);
-        
-         console.log('Longitud de arregloTodo');
-        console.log(arregloTodo.length);
-        
+
+        var santy = {
+            'nombre': 'Santiago',
+            'apellido': 'Lema',
+            'edad': 21,
+            'mascota': ['Perlita', 'Panchito'],
+            'padres': [
+                {
+                    nombre: 'Roberto',
+                    apellido: 'Lema'
+                 },
+                {
+                    nombre: 'Cecilia',
+                    apellido: 'Orquera'
+                 }],
+
+
+        }
+
+        console.log('Acceder Nombre');
+        console.log(santy.nombre);
+        console.log('Acceder Apellido');
+        console.log(santy.apellido);
+
+        console.log('Acceder Padres');
+        console.log(santy.padres);
+
     </script>
 </head>
 

@@ -31,7 +31,7 @@
 ## Objetivos
 - Desarrollar el conocimiento Web.
 - Aprender a utilizar variables de JavaScript.
-- Aprender a crear vectores en JavaScript.
+- Aprender a crear arreglos en JavaScript.
 - Aprender a utilizar objetos en JavaScript.
 - Crear funciones básicas en JavaScript.
 - Utilizar la consola del navegador para observar los resultados de la programación en JavaScript.
@@ -108,7 +108,7 @@
 <img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Consola.png?raw=true">
 </p>
 
-3) Ahora, vamos a crear variables de JS.
+3) Ahora, vamos a crear **variables** de JS.
 * El formato para definir una variable es:
 
 ```javascript
@@ -182,7 +182,7 @@
 * Luego, se convierte en un entero igual a 2.
     * Se observa que el tipo se cambia automáticamente al realizar la nueva asignación.
     
-5) Para utilizar arreglos en JS, se debe utilizar el siguiente formato:
+5) Para utilizar **arreglos** en JS, se debe utilizar el siguiente formato:
 
 ```javascript
 var nombreDelArreglo = [valor1, valor2,..., valorN ];
@@ -199,7 +199,7 @@ var nombreDelArreglo = [valor1, valor2,..., valorN ];
         var arregloFloat = [1.3, 2.15, 0.84];
         console.log(arregloFloat);
         
-         var arregloBooleano = [false,true,true];
+        var arregloBooleano = [false,true,true];
         console.log(arregloBooleano);
         
         var arregloNull = [null,null,null];
@@ -211,7 +211,7 @@ var nombreDelArreglo = [valor1, valor2,..., valorN ];
         var arregloTodo = ["Nombre", 123, 3.1416, true, false, undefined, null, "Apellido"];
         console.log(arregloTodo);
         
-         console.log('Longitud de arregloTodo');
+        console.log('Longitud de arregloTodo');
         console.log(arregloTodo.length);
 ```
 
@@ -222,6 +222,57 @@ var nombreDelArreglo = [valor1, valor2,..., valorN ];
 * Se observa que es posible crear arreglos cuyas variables sean de distintos tipos.
 * Por otro lado, para acceder a la longitud de un arreglo se utiliza la propiedad *length*.
 
+6) Para crear **objetos* se utiliza el siguiente formato:
+
+```javascript
+
+var nombreObjeto = { 
+                'atributo1' : valorAtributo1 ,
+                'atributo2' : valorAtributo2 
+                ...
+
+                    }
+```
+* A continuación, se muestra un código en el que se muestra la creación de objetos.
+
+```javascript
+            var santy = {
+            'nombre': 'Santiago',
+            'apellido': 'Lema',
+            'edad': 21,
+            'mascota': ['Perlita', 'Panchito'],
+            'padres': [
+                {
+                    nombre: 'Roberto',
+                    apellido: 'Lema'
+                 },
+                {
+                    nombre: 'Cecilia',
+                    apellido: 'Orquera'
+                 }],
+
+
+        }
+
+        console.log('Acceder Nombre');
+        console.log(santy.nombre);
+        console.log('Acceder Apellido');
+        console.log(santy.apellido);
+
+        console.log('Acceder Padres');
+        console.log(santy.padres);
+```
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Objetos.png?raw=true">
+</p>
+
+* Hay que tomar en cuenta que dentro de un objeto no solo podemos tener atributos, sino también vectores y otros objetos.
+* *santy* tiene atributos: nombre, apellido y edad.
+* *mascotas* que es un vector con dos elementos.
+* *padres* que es un vector de otros objetos.
+* Para acceder a cualquier elemento de un objeto, simplemente escribimos el nombre del objeto seguido de un punto y el nombre del elemento.
+    * Por ejemplo, *santy.padres* accede a los padres de *santy*.
+    
 
 * Este archivo HTML está disponible en [Archivo HTML](https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/index.html).
 
