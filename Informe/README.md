@@ -273,7 +273,7 @@ var nombreObjeto = {
 * Para acceder a cualquier elemento de un objeto, simplemente escribimos el nombre del objeto seguido de un punto y el nombre del elemento.
     * Por ejemplo, *santy.padres* accede a los padres de *santy*.
 
-7) Cada uno de los objetos puede tener sus propias funciones, las cuales pueden ser llamadas posteriormente. El formato de una función es:
+7) Cada uno de los objetos puede tener sus propias **funciones**, las cuales pueden ser llamadas posteriormente. El formato de una función es:
 ```javascript
 
     nombreFunción : function ( parámetros ) {
