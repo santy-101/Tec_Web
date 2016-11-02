@@ -222,7 +222,7 @@ var nombreDelArreglo = [valor1, valor2,..., valorN ];
 * Se observa que es posible crear arreglos cuyas variables sean de distintos tipos.
 * Por otro lado, para acceder a la longitud de un arreglo se utiliza la propiedad *length*.
 
-6) Para crear **objetos* se utiliza el siguiente formato:
+6) Para crear *objetos* se utiliza el siguiente formato:
 
 ```javascript
 
@@ -272,8 +272,59 @@ var nombreObjeto = {
 * *padres* que es un vector de otros objetos.
 * Para acceder a cualquier elemento de un objeto, simplemente escribimos el nombre del objeto seguido de un punto y el nombre del elemento.
     * Por ejemplo, *santy.padres* accede a los padres de *santy*.
-    
 
+7) Cada uno de los objetos puede tener sus propias funciones, las cuales pueden ser llamadas posteriormente. El formato de una función es:
+```javascript
+
+    nombreFunción : function ( parámetros ) {
+
+    return ___ ;
+
+    }
+```
+8) Para llamar a una función: 
+```javascript
+
+    nombreObjeto.nombreFunción ( parámetros );
+```
+
+* A continuación, se muestran algunas funciones: 
+
+```javascript
+ getNombre: function () {
+                return this.nombre;
+            },
+            
+getApellido: function () {
+                return this.apellido;
+            },
+            
+setApellido: function (nuevoApellido) {
+                this.apellido = nuevoApellido;
+            }
+```
+
+* Estas son las respectivas llamadas: 
+
+```javascript
+console.log('getNombre');
+console.log(santy.getNombre());
+console.log('getApellido');
+console.log(santy.getApellido());
+console.log('setApellido');
+santy.setApellido('Orquera');
+console.log('Nuevo Apellido');
+console.log(santy.getApellido());
+ 
+```
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Funciones.png?raw=true">
+</p>
+
+* Se observan llamadas a *getNombre()* y *getApellido()* que devuelven el nombre y apellido, respectivamente.
+* También se usa *setApellido()* que recibe un nuevo apellido como parámetro.
+
+<br>
 * Este archivo HTML está disponible en [Archivo HTML](https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/index.html).
 
 <br>
@@ -281,7 +332,12 @@ var nombreObjeto = {
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones
-* 
+* Se aprendieron conocimientos básicos sobre JS y ECMAScript.
+* Se aprendió a utilizar variables de distintos tipos en JS.
+* Se aprendió a utilizar vectores con elementos de distintos tipos.
+* Se aprendió a crear objetos con sus respectivas funciones.
+* A pesar de que no es obligatorio, se recomienda utilizar `;` en favor de mantener el estándar.
+* Se recomienda 
 
 
 <br>
