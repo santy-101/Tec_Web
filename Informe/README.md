@@ -91,7 +91,7 @@
 </html>
 ```
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/XS2.png?raw=true">
+<img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Alerta.png?raw=true">
 </p>
 
 * `alert()` es una función que muestra el mensaje de alerta y recibe un parámetro que es el texto de la alerta.
@@ -100,13 +100,70 @@
 2) Para observar la consola del navegador, hacemos clic derecho sobre el mismo, luego seleccionamos la pestaña *Inspeccionar* seguido de la pestaña *Console*.
 
 
-
-
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/XS2.png?raw=true">
+<img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Instrucciones.png?raw=true">
 </p>
 
-* Este archivo HTML está disponible en [Archivo HTML](https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/index.html).
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Consola.png?raw=true">
+</p>
+
+3) Ahora, vamos a crear variables de JS.
+* El formato para definir una variable es:
+
+```javascript
+    var nombreVarible = valorVariable ; 
+```
+* El siguiente código contiene la creación de variables de distintos tipos.
+
+```javascript
+        var texto = "Texto";
+        console.log('Variable string');
+        console.log(texto);
+
+    
+        var numero = 1;
+        console.log('Variable entera');
+        console.log(numero);
+
+        
+        var float = 1.223;
+        console.log('Variable float');
+        console.log(float);
+
+      
+        var booleanTrue = true;
+        console.log('Variable booleanTrue');
+        console.log(booleanTrue);
+
+
+        var booleanFalse = false;
+        console.log('Variable booleanFalse');
+        console.log(booleanFalse);
+        
+
+        var varNull = null;
+        console.log('Variable null');
+        console.log(varNull);
+
+      
+        var varUndefined = undefined;
+        console.log('Variable undefined');
+        console.log(varUndefined);
+```
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Variables.png?raw=true">
+</p>
+
+* Las variables string van entre comillas dobles o simples.
+* Las variables enteras son números enteros.
+* En las variables float, los decimales se separan con un punto.
+* Las variables boolean pueden ser *true* o *false*.
+* Las variables null son *null*.
+* Las variables undefined son *undefined*.
+
+* Este archivo HTML está disponible en [Archivo HTML](https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/index.html).
 
 <br>
 <a href="#Cabecera">A la cabecera</a>
