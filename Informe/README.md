@@ -17,6 +17,12 @@
 - <a href="#Marco Teórico">Marco Teórico</a>
   * <a href="#JavaScript">JavaScript</a>
   * <a href="#ECMAScript">ECMAScript</a>
+  * <a href="#Diseño web">Diseño web</a>
+  * <a href="#Calidad web">Calidad web</a>
+  * <a href="#WAI web">WAI web</a>
+  * <a href="#Val web">Validación web</a>
+  * <a href="#SEO web">SEO web</a>
+  
 
 - <a href="#Desarrollo">Desarrollo de la Práctica</a>
 - <a href="#Conclusiones y Recomendaciones">Conclusiones y Recomendaciones</a> 
@@ -66,6 +72,97 @@
 (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/ECMAScript))
 <br>
 <a href="#Cabecera">A la cabecera</a>
+
+<a name="Diseño web"></a>
+### Diseño web
+* Diseñar un sitio web requiere planificación cuidadosa.
+
+    * Los usuarios son escáneres
+        * Un visitante típico no leerá todo el contenido de la página web.
+        * Es importante llegar al punto en la primera oración de la página.
+    * Menos es más
+        * Párrafos lo más cortos posible.
+        * Páginas lo más cortas posible.
+        * Usar mucho espacio.
+    * Navegación
+        * Crear una estructura de navegación consistente usada por toda las páginas en el sitio web.
+        * No usar hipervínculos dentro de cada párrafo.
+    * Velocidad de descarga
+        * Muchos visitantes dejarán la página web si tarda más de 7 segundos en cargarse.
+        * Si la página tarda mucho tiempo en cargarse, considerar remover contenido gráfico o multimedia.
+    * Dejar que la audiencia hale
+        * El feedback es muy importante. 
+        * Los visitantes son los clientes. A menudo proveen pistas de lo que se pudo haber hecho mejor.
+    * El monitor de los visitantes
+        * Es importante probar el sitio web en distintos monitores
+    * Navegadores
+        * Los navegadores más populares son Firefox y Google Chrome.
+        * Usar HTML correcto ayudará a que los navegadores muestren las páginas correctamente.
+    * Plug-Ins
+        * Asegurarse que los visitantes tiene acceso al software que necesitan para visualizar contenido multimedia.
+    * Discapacidades
+        * Siempre añadir texto alternativo para imágenes y elementos gráficos.
+
+(Fuente: [W3Schools](http://w3schools.bootcss.com/website/web_design.html))
+<br>
+<a href="#Cabecera">A la cabecera</a>
+
+<a name="Calidad web"></a>
+### Calidad web
+    * Usar HTML5.
+    * Usar arhivos CSS separados.
+    * Validar la web.
+    * Usar un elemento <title> corto y descriptivo.
+    * Siempre usar el meta elemento <meta charset> en páginas HTML.
+    * Usar fechas con el formato ISO (yyyy-mm-dd).
+
+(Fuente: [W3Schools](http://w3schools.bootcss.com/website/web_quality.html))
+<br>
+<a href="#Cabecera">A la cabecera</a>
+
+<a name="WAI web"></a>
+### WAI web
+* WAI define las guías para los desarrolladores web.
+* WAI significa Web Accessibility Initiave (Iniciativa de accesibilidad web).
+* Algunas razones para hacer un sitio más accesible:
+    * Mejorará la reputación y satisfacción del cliente.
+    * Incrementará el número de visitantes.
+    * Los visitantes se quedarán más tiempo.
+    * El sitio será utilizable por personas con equipos más antiguos.
+* Para hacer un sitio más accesible:
+    * Utilizar texto alternativo.
+    * No usar letras pequeñas.
+    * Usar mejor los espacios.
+    * Evitar letras difíciles de leer.
+    * Evitar contrastes malos de color.
+    * Siempre definir un color de fondo.
+
+(Fuente: [W3Schools](http://w3schools.bootcss.com/website/web_wai.html))
+<br>
+<a href="#Cabecera">A la cabecera</a>
+
+<a name="Val web"></a>
+### Validación web
+* Validador de páginas web
+    * Un validador es un software que puede revisar que las páginas web cumplan con estándares.
+    * El validador retorna una lista de errores, de acuerdo al estándar escodigo.
+    * Es importante validar las páginas web antes de publicarlas.
+
+(Fuente: [W3Schools](http://w3schools.bootcss.com/website/web_validate.html)
+<br>
+<a href="#Cabecera">A la cabecera</a>
+
+<a name="SEO web"></a>
+### SEO web
+* SEO significa Search Engine Optimization (Optimización de buscador ).
+* Proceso de mejorar el ranking (visibilidad) de una página web en los buscadores.
+* Mientras más alto o más frecuentemente un sitio web sea mostrar en la lista del buscador, más visitantes se espera que tenga.
+* Optimizar un sitio web puede implicar editar el contenido para incrementar su relevancia. 
+
+(Fuente: [W3Schools](http://w3schools.bootcss.com/website/web_search.html))
+<br>
+<a href="#Cabecera">A la cabecera</a>
+
 <a name="Desarrollo"></a>
 ## Desarrollo de la práctica
 
