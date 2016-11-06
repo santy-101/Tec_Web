@@ -112,8 +112,8 @@
 * Usar HTML5.
 * Usar arhivos CSS separados.
 * Validar la web.
-* Usar un elemento <title> corto y descriptivo.
-* Siempre usar el meta elemento <meta charset> en páginas HTML.
+* Usar un elemento `<title>` corto y descriptivo.
+* Siempre usar el meta elemento `<meta charset>` en páginas HTML.
 * Usar fechas con el formato ISO (yyyy-mm-dd).
 
 (Fuente: [W3Schools](http://w3schools.bootcss.com/website/web_quality.html))
