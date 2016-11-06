@@ -90,11 +90,11 @@
     * Velocidad de descarga
         * Muchos visitantes dejarán la página web si tarda más de 7 segundos en cargarse.
         * Si la página tarda mucho tiempo en cargarse, considerar remover contenido gráfico o multimedia.
-    * Dejar que la audiencia hale
+    * Dejar que la audiencia hable
         * El feedback es muy importante. 
         * Los visitantes son los clientes. A menudo proveen pistas de lo que se pudo haber hecho mejor.
     * El monitor de los visitantes
-        * Es importante probar el sitio web en distintos monitores
+        * Es importante probar el sitio web en distintos monitores.
     * Navegadores
         * Los navegadores más populares son Firefox y Google Chrome.
         * Usar HTML correcto ayudará a que los navegadores muestren las páginas correctamente.
@@ -109,12 +109,12 @@
 
 <a name="Calidad web"></a>
 ### Calidad web
-    * Usar HTML5.
-    * Usar arhivos CSS separados.
-    * Validar la web.
-    * Usar un elemento <title> corto y descriptivo.
-    * Siempre usar el meta elemento <meta charset> en páginas HTML.
-    * Usar fechas con el formato ISO (yyyy-mm-dd).
+* Usar HTML5.
+* Usar arhivos CSS separados.
+* Validar la web.
+* Usar un elemento <title> corto y descriptivo.
+* Siempre usar el meta elemento <meta charset> en páginas HTML.
+* Usar fechas con el formato ISO (yyyy-mm-dd).
 
 (Fuente: [W3Schools](http://w3schools.bootcss.com/website/web_quality.html))
 <br>
