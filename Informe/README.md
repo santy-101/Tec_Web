@@ -15,6 +15,7 @@
 - <a href="#Tema">Tema</a>
 - <a href="#Objetivos">Objetivos</a>
 - <a href="#Marco Teórico">Marco Teórico</a>
+  * <a href="#Bootstrap">Bootstrap</a>
   * <a href="#JavaScript">JavaScript</a>
   * <a href="#ECMAScript">ECMAScript</a>
   * <a href="#Diseño web">Diseño web</a>
@@ -48,6 +49,15 @@
 <a name="Marco Teórico"></a>
 ## Marco Teórico
 
+<a name="Bootstrap"></a>
+### Bootstrap
+
+* Bootstrap es el framework HTML, CSS y JS más popular para desarrollar proyectos móbiles responsivos en la web.
+* Gracias a Bootstrap escalar sitios web y aplicaciones  de teléfonos a tabletas y computadores de escritorio es fácil y eficiente.
+
+(Fuente: [Bootstrap](http://getbootstrap.com/))
+<br>
+<a href="#Cabecera">A la cabecera</a>
 
 <a name="JavaScript"></a>
 ### JavaScript
@@ -167,6 +177,120 @@
 ## Desarrollo de la práctica
 
 * Para esta práctica, crearemos un archivo *index.html* y lo modificaremos varias veces.
+
+### Bootstrap
+
+1) Para crear texto más claro, lo colocamos en medio de los tags `<small> </small>`.
+
+2) Para mostrar tags en HTML, se usa el formato `<code>&lt; nombreDelTag &gt;</code>`.
+
+3) Si queremos usar instrucciones de teclado usamos los tags `<ktd> </ktd>`.
+
+* Un código que muestra lo indicado anteriormente es el siguiente:
+
+```html
+<h1>Mi título <small>este título es más claro </small></h1>
+<h2>Mi ejemplo de código</h2>
+<p>El tag para describir imágenes es:
+<code>&lt;img&gt;</code>
+</p>
+<h1>Instrucciones de teclado</h1> No se permite usar <kbd>control</kbd><kbd>+</kbd><kbd>c</kbd>.
+```
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Claro.png?raw=true">
+</p>
+
+* *este título es más claro* se muestra en color más claro.
+* `<img>` es un tag de HTML.
+* *control + c* se muestra como instrucción de teclado.
+
+4) Para usar tablas usamos la siguiente estructura:
+
+```html
+ <h1>Tablas</h1>
+    <!--Tablas-->
+    <!--       table, table-bordered table-hover table-striped-->
+ <table class="table table-striped table-hover">
+
+
+        <!--Table Row-->
+        <tr class="active">
+
+            <!--Table Header-->
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+
+        </tr>
+
+        <tr class="warning">
+            <!--Table Detail-->
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+
+        </tr>
+        <td>Centro comercial Moctezuma </td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+        <tr>
+
+        </tr>
+    </table>
+```
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Tablas.png?raw=true">
+</p>
+
+* Los tags `<table>` y `</table>` encierran a toda la tabla.
+* La clase a la que pertenece la tabla le puede dotar de estilos.
+    * En este caso, *table* hace que existan divisiones horizontales, *table-striped* hace que tenga divisiones zebra y *table-hover* hace que cada fila se ilumine cuando el mouse pasa sobre ellas.
+* `<tr>` y `</tr>` indican una nueva fila. La primera fila tiene clase *active* por lo que se muestra con fondo verde.
+* `<th>` y `</th>` indican cabecera, es decir, los títulos de cada columna. (Company, Contact y Country).
+* La segunda fila tiene clase *warning* y por eso su fondo es rojo.
+    * Esta fila tiene elementos normales (detalles) que se indican mediante los tags `<td>` y `</td>`.
+* La última fila tiene 3 elementos.
+
+5) Finalmente, podemos crear forms.
+
+```html
+<h2>Forms</h2>
+
+<div class="container">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">Correo:</div>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            <div class="input-group-addon">.es</div>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+```
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/04-JS/Informe/Imágenes/Forms.png?raw=true">
+</p>
+
+* Este form es algo complejo pero hay que tomar en cuenta que:
+    * *label* indica el título de este form.
+    * El primer *input-group-addon* muestra el texto a la izquiera de donde escribirá el usuario.
+    * *placeholder* es el texto predeterminado antes de que el usuario lo reemplace.
+    * El segundo *input-group-addon* muestra el texto a la derecha de donde escribirá el usuario.
+    * *button* crea un botón.
+
+### JavaScript
+
 * Todo código JS debe encontrarse entre los tags `<script> </script>`.
 
 1) Primero, vamos a crear una ventana de alerta que se mostrará en el navegador y además un mensaje en consola.
@@ -429,6 +553,7 @@ console.log(santy.getApellido());
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones
+* Se aprendió a crear tablas y forms usando Bootstrap.
 * Se aprendieron conocimientos básicos sobre JS y ECMAScript.
 * Se aprendió a utilizar variables de distintos tipos en JS.
 * Se aprendió a utilizar vectores con elementos de distintos tipos.
