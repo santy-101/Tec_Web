@@ -102,96 +102,116 @@
         //
         //        }
 
-        
-//        var numSheep = 4;
-//        var monthstToPrint = 12;
-//
-//        for (var monthNumber = 1; monthNumber <= monthstToPrint; monthNumber++) {
-//            numSheep *= 4;
-//            console.log('There will be ' + (numSheep) + ' sheep after ' + monthNumber + ' month(s)!');
-//            if (monthNumber % 4 === 0) {
-//
-//                console.log('Removing ' + numSheep * 0.75 + ' sheep from the population');
-//                numSheep = 0.25 * numSheep;
-//            } else if (numSheep > 10000) {
-//                numSheep = numSheep / 2;
-//                console.log('Removing ' + numSheep + ' sheep from the population');
-//            }
-//
-//        }
-        
-        
-        //PROMPT
-        
-//        var respuesta = prompt("¿Cuál es tu edad?");
-//                               console.log(parseInt(respuesta));
-        
-        //FUNCIONES
-        
-//        function multiplicar (num1, num2, num3)
-//        {
-//            return num1*num2*num3;
-//        }
-//        
-//        console.log(multiplicar(2,6,9));
-//        
-//        
-        //MAYOR DE 2 NUM
-        
-//         function maxOf2 (num1, num2)
-//        {
-//            if(num1>num2)
-//                {
-//                    return num1;
-//                }
-//            else
-//                {
-//                    if(num2>num1)
-//                        {
-//                            return num2;
-//                        }
-//                    else
-//                        {
-//                            return num2;
-//                        }
-//                }
-//            
-//        }
-//        
-//        console.log(maxOf2(15,15));
-//        
-        
-        //Mystery
-//        function mystery (num1, num2)
-//        {
-//            return (4*num1*num2) + (3*num2+5);
-//        }
-//        
-//        console.log(mystery(4,7));
-      
-        
-        //ALIMENTAR
-//        
-//        function feedPerRanger (numOvejas,numRangers)
-//        {
-//            var valor=(2*numOvejas)/numRangers;
-//            return alert('Each Park Ranger should load '+valor+' lbs of feed today');
-//        }
-//        
-//        feedPerRanger(4,2);
-        
-        //Acceder a vectores
-        
-//        var movie1 = [16,"Candles"];
-//        var movie2 = [3, "Men","and","a","Baby"];
-//        var eightiesMovies = [movie1,movie2];
-//        
-//        var infant=eightiesMovies[1][4];
-//        
-//        console.log(infant);
 
-        console.log(typeof 1);
+        //        var numSheep = 4;
+        //        var monthstToPrint = 12;
+        //
+        //        for (var monthNumber = 1; monthNumber <= monthstToPrint; monthNumber++) {
+        //            numSheep *= 4;
+        //            console.log('There will be ' + (numSheep) + ' sheep after ' + monthNumber + ' month(s)!');
+        //            if (monthNumber % 4 === 0) {
+        //
+        //                console.log('Removing ' + numSheep * 0.75 + ' sheep from the population');
+        //                numSheep = 0.25 * numSheep;
+        //            } else if (numSheep > 10000) {
+        //                numSheep = numSheep / 2;
+        //                console.log('Removing ' + numSheep + ' sheep from the population');
+        //            }
+        //
+        //        }
+
+
+        //PROMPT
+
+        //        var respuesta = prompt("¿Cuál es tu edad?");
+        //                               console.log(parseInt(respuesta));
+
+        //FUNCIONES
+
+        //        function multiplicar (num1, num2, num3)
+        //        {
+        //            return num1*num2*num3;
+        //        }
+        //        
+        //        console.log(multiplicar(2,6,9));
+        //        
+        //        
+        //MAYOR DE 2 NUM
+
+        //         function maxOf2 (num1, num2)
+        //        {
+        //            if(num1>num2)
+        //                {
+        //                    return num1;
+        //                }
+        //            else
+        //                {
+        //                    if(num2>num1)
+        //                        {
+        //                            return num2;
+        //                        }
+        //                    else
+        //                        {
+        //                            return num2;
+        //                        }
+        //                }
+        //            
+        //        }
+        //        
+        //        console.log(maxOf2(15,15));
+        //        
+
+        //Mystery
+        //        function mystery (num1, num2)
+        //        {
+        //            return (4*num1*num2) + (3*num2+5);
+        //        }
+        //        
+        //        console.log(mystery(4,7));
+
+
+        //ALIMENTAR
+        //        
+        //        function feedPerRanger (numOvejas,numRangers)
+        //        {
+        //            var valor=(2*numOvejas)/numRangers;
+        //            return alert('Each Park Ranger should load '+valor+' lbs of feed today');
+        //        }
+        //        
+        //        feedPerRanger(4,2);
+
+        //Acceder a vectores
+
+        //        var movie1 = [16,"Candles"];
+        //        var movie2 = [3, "Men","and","a","Baby"];
+        //        var eightiesMovies = [movie1,movie2];
+        //        
+        //        var infant=eightiesMovies[1][4];
+        //        
+        //        console.log(infant);
+
+//        console.log(typeof 1);
+//        console.log(typeof "hola");
+//        console.log(typeof []);
+//        console.log(typeof {});
+//        console.log(typeof true);
         
+        function contarString (arreglo)
+        {
+            var count=0;
+            
+            for(var i=0; i<arreglo.length;i++)
+                {
+                    if(typeof arreglo[i]=='string')
+                       {
+                       count++;
+                       }
+                }
+            return count;
+        }
+        
+        var arreglo = [1,'2',3,'4',5,'seis'];
+        console.log(contarString(arreglo));
     </script>
 
 
