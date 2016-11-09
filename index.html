@@ -5,20 +5,100 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script>
-    
+        //        
+        //        var nombreFuncion = function()
+        //        {
+        //            console.log('nombreFuncion');
+        //        }
+        //        nombreFuncion();
+        //        
+        //        function nombre()
+        //        {
+        //            console.log('nombre');
+        //        }
+        //        nombre();
+
+        //ejercicios
+
+        //        var passengers = [["Thomas","Meeks"],["Gregg","Pollack"],["Christine","Wong"],["Dan","McGaw"]];
+        //        
+        //        var modifiedName = passengers.map( function(arrayNombreApellido){
+        //            
+        //            return arrayNombreApellido[0]+' '+arrayNombreApellido[1];
+        //        });
+        //        
+        //        console.log(modifiedName);
+        //        
+        //        
+        //        modifiedName.map(function(persona)
+        //                        {
+        //            alert('Yo, '+persona+' !');
+        //        })
+        //    
+
+        // ejercicio
+
+        //        var puzzlers = [
+        //            function (input)
+        //            {
+        //                return (3 * input - 8);
+        //            },
+        //              function (input)
+        //            {
+        //                return Math.pow((input + 2), 3);
+        //            },
+        //              function (input)
+        //            {
+        //                return (input * input - 9);
+        //            },
+        //              function (input)
+        //            {
+        //                return (input % 4);
+        //            }
+        //        ]
+        //
+        //        console.log(puzzlers[0](5));
+        //        console.log(puzzlers[1](5));
+        //        console.log(puzzlers[2](5));
+        //        console.log(puzzlers[3](5));
+
+        //var eleccion = prompt('Seleccione una opción');
+        //adventureSelector(eleccion);
+
+
+        //
+
+        var puzzlers = [
+          function (a) {
+                return 8 * a - 10;
+            },
+             function (a) {
+                return (a-3)*(a-3)*(a-3);
+            },
+                function (a) {
+                return a * a + 4;
+            },
+                function (a) {
+                return a% 5;
+            },
+        ];
         
-        var nombreFuncion = function()
-        {
-            console.log('nombreFuncion');
-        }
-        nombreFuncion();
+        var start =2;
         
-        function nombre()
-        {
-            console.log('nombre');
+        var applyAndEmpty = function (input, queue) {
+            var longitud = queue.length;
+            for (var i=0; i < longitud; i++)
+                {
+                    input = queue[0](input);
+                    queue.splice(0,1);
+                }
+            console.log(queue);
+            return input;
         }
-        nombre();
-    
+        
+        console.log(applyAndEmpty(start,puzzlers));
+        
+        
     </script>
 
 </head>
