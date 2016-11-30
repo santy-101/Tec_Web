@@ -10,6 +10,7 @@ app.post('/TecnologiasWeb', function (req, res) {
     //request => req
     //response => res
     
+    var parametros = req.params;
     
     var usuario = {
         nombre:'Santiago',
@@ -38,7 +39,13 @@ app.post('/TecnologiasWeb', function (req, res) {
     console.log(req.headers);
    
     console.log('Cabeceras del RESPONSE ');  
+    
+    
+    res.append ('token','1234');
+    
     console.log(res.headers);
+    
+    
     
     
     res.json(usuario);
