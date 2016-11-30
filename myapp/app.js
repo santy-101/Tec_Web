@@ -9,6 +9,26 @@ app.get('/TecnologiasWeb', function (req, res) {
 app.post('/TecnologiasWeb', function (req, res) {
     //request => req
     //response => res
+    
+    
+    var usuario = {
+        nombre:'Santiago',
+        cedula:'000000'
+    
+    }
+//    
+//    usuario = {
+//        
+//        nombre:usuario.nombre,
+//        cedula:usuario.cedula,
+//        apellido:''
+//        
+//    }
+    
+    usuario.apellido = 'Lema'
+    usuario.mascotas = [];
+    usuario.casado = false;
+    
     console.log('Lo que tengo en el REQUEST es: ');  
     console.log(req);
     console.log('Lo que tengo en el RESPONSE es: ');  
@@ -21,7 +41,7 @@ app.post('/TecnologiasWeb', function (req, res) {
     console.log(res.headers);
     
     
-    res.send('con post!')
+    res.json(usuario);
 })
 
 app.listen(puerto, function () {
