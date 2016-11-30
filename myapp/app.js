@@ -22,6 +22,7 @@ var usuarios = [
     }
 ]
 
+var contador=3;
 
 
 app.get('/', function (req, res) {
@@ -51,6 +52,35 @@ app.get('/TecnologiasWeb', function (req, res) {
     res.send('con Javascript!')
 })
 
+app.post('/Usuario', function (req, res)
+    
+         {
+         console.log(req.query.nombre);
+
+          console.log(req.query.cedula);
+                   
+         if(!req.query.nombre)
+             {
+                 res.send('No envió el nombre');
+             }
+        if(!req.query.cedula)
+             {
+                 res.send('No envió la cédula');
+             }
+    
+        var nuevoUsuario ={
+                       id:contador+1,
+                        nombre:req.query.nombre,
+                       cedula:req.query.cedula
+        }
+    
+        usuarios.push(nuevoUsuario);
+
+        contador = contador++;
+        res.json(nuevoUsuario);
+
+})
+
 
 app.post('/TecnologiasWeb', function (req, res) {
 
@@ -68,6 +98,8 @@ app.post('/TecnologiasWeb', function (req, res) {
     
     
     res.append('token', '1234');
+    
+
     res.json(usuario);
     
     
@@ -106,8 +138,11 @@ app.post('/TecnologiasWeb', function (req, res) {
 //    }
 
     
-    //res.send('Picachu');
+    //res.send('Pikachu');
 
+    
+    
+    
 
 })
 
