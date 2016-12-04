@@ -15,8 +15,8 @@
 - <a href="#Tema">Tema</a>
 - <a href="#Objetivos">Objetivos</a>
 - <a href="#Marco Teórico">Marco Teórico</a>
-  * <a href="#Node.js">Node</a>
-  * <a href="#Npm">Npm</a>
+  * <a href="#Node.js">Node.js</a>
+  * <a href="#Npm">npm</a>
 
 - <a href="#Desarrollo">Desarrollo de la Práctica</a>
 - <a href="#Conclusiones y Recomendaciones">Conclusiones y Recomendaciones</a> 
@@ -41,7 +41,7 @@
 ## Marco Teórico
 
 
-<a name="Node"></a>
+<a name="Node.js"></a>
 ### Node.js
 
 * Node.js es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome. 
