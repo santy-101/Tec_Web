@@ -17,7 +17,6 @@
 - <a href="#Marco Teórico">Marco Teórico</a>
   * <a href="#Node.js">Node</a>
   * <a href="#Npm">Npm</a>
-  * <a href="#Express">Express</a>
 
 - <a href="#Desarrollo">Desarrollo de la Práctica</a>
 - <a href="#Conclusiones y Recomendaciones">Conclusiones y Recomendaciones</a> 
@@ -33,7 +32,7 @@
 - Desarrollar el conocimiento Web.
 - Utilizar Node.js para desarrollar aplicaciones que utilizan JavaScript.
 - Manejar npm para compartir y reutilizar código.
-- Crear una aplicación web sencilla para manejo de usuarios.
+- Crear paquetes con funcionalidad que puede ser reutilizada a futuro.
 <br>
 
 <a href="#Cabecera">A la cabecera</a>
@@ -63,17 +62,6 @@
 * Una aplicación típica, como un sitio web, dependerá de decenas o cientes de paquetes.
 
 (Fuente: [npm](https://docs.npmjs.com/getting-started/what-is-npm))
-<br>
-<a href="#Cabecera">A la cabecera</a>
-
-<a name="Express"></a>
-### Express
-
-* Express en un framework de aplicación web de Node.js mínimo y flexible que prové un conjunto robuto de características para aplicaciones web y móbile.
-* Gracias a su variedad de métodos de utilidad HTTP y middleware, crear una API robusta es rápido y sencillo.
-* Muchos frameworks populares están basados en Express.
-
-(Fuente: [Express](http://expressjs.com/))
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
@@ -234,8 +222,7 @@ console.log(calculadora.imprimirSuma1y2());
 ## Conclusiones y Recomendaciones
 * Se aprendieron conocimientos básicos sobre Node.js y npm.
 * Se aprendió a utilizar Node.js y npm para crear y publicar paquetes json.
-* Se aprendió a utilizar Express para crear una pequeña aplicación web para manejo de usuarios.
-* Se aprendió a utilizar Postman para verificar el comportamiento de la aplicación web.
+* Se aprendió a crear paquetes de código que son reutilizables.
 * Se recomienda leer la documentación original de las herramientas utilizadas para entender de mejor manera su utilización.
 * Es necesario mantener sencillo el código para que pueda ser entendido por otros.
 
