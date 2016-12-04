@@ -140,7 +140,7 @@ console.log(resultado);
 <img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/3.png?raw=true">
 </p>
 
-10) Para subir paquetes al internet debemos crear una cuenta en npm. Para ello vamos al enlace [Crear cuenta npm](https://www.npmjs.com/signup)y llenamos los campos pertinentes.
+10) Para subir paquetes al internet debemos crear una cuenta en npm. Para ello vamos al enlace [Crear cuenta npm](https://www.npmjs.com/signup) y llenamos los campos pertinentes.
 
 11) Ahora iniciamos sesión con esta cuenta. Usamos el comando `npm login` y llenamos los campos.
 
@@ -180,6 +180,53 @@ console.log(resultado);
 <p align="center">
 <img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/nuevopaq.png?raw=true">
 </p>
+
+16) Si se desea eliminar un paquete usamos `npm uninstall nombrepaquete`.
+
+17) Ahora, vamos a importar un paquete. Para ellos vamos a modificar el código del segundo archivo *app.js*.
+
+```javascript
+module.exports = {
+    imprimirSuma1y2 : imprimirSuma1y2;
+    
+}
+
+function imprimirSuma1y2() {
+    var num1 = 1;
+    var num2 = 2;
+
+    var resultado = num1 + num2;
+
+    console.log(resultado);
+
+}
+```
+* Se ha creado una función *imprimirSuma1y2* que suma 1 y 2.
+* *module.exports* nos va a permitir importar esta función.
+
+18) Ahora vamos a crear otro archivo *app.js* en la misma carpeta donde se encuentra *node_modules*.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/modules.png?raw=true">
+</p>
+
+19) Este archivo tendrá el siguiente código:
+
+```javascript
+var calculadora = require("santy");
+
+console.log(calculadora.imprimirSuma1y2());
+```
+* *require* llama al paquete que creamos y lo asigna a calculador
+* Recordar que este paquete contenía la función *imprimirSuma1y2*.
+* Mostramos el resultado de esa función en consola.
+
+20) Si corremos este archivo obtendremos el mismo resultado.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/resultado.png?raw=true">
+</p>
+
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
