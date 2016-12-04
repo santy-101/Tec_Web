@@ -121,11 +121,11 @@
 <img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/cod.png?raw=true">
 </p>
 
-8)  Procemos a crear un archivo llamado app.js (recordar que el campo main debía tener este nombre) con el siguiente código
+8)  Procemos a crear un archivo llamado app.js (recordar que el campo main debía tener este nombre) con el siguiente código:
 
 
 ```javascript
-  var num1 = 1;
+var num1 = 1;
 var num2 = 2;
 
 var resultado = num1 + num2;
@@ -140,8 +140,46 @@ console.log(resultado);
 <img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/3.png?raw=true">
 </p>
 
+10) Para subir paquetes al internet debemos crear una cuenta en npm. Para ello vamos al enlace [Crear cuenta npm](https://www.npmjs.com/signup)y llenamos los campos pertinentes.
 
+11) Ahora iniciamos sesión con esta cuenta. Usamos el comando `npm login` y llenamos los campos.
 
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/cuenta.png?raw=true">
+</p>
+
+12) Podemos publicar el paquete con el comando `npm publish`.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/publish.png?raw=true">
+</p>
+
+13) En la página web, observamos que, efectivamente, el paquete ha sido publicado.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/paqonline.png?raw=true">
+</p>
+
+14) Para descargar un paquete usamos `npm i -g nombrepaquete`.
+* Esta es una instalación global
+* El paquete se instalará en la carpeta mostrada en consola.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/desc.png?raw=true">
+</p>
+
+14) Si queremos que el paquete se descargue en una carpeta que nosotros deseamos, usamos `npm i nombrepaquete`.
+* Debemos movernos primero a dicha carpeta.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/descarga2.png?raw=true">
+</p>
+
+15) Observamos que efectivamente, el paquete se ha descargado.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/nuevopaq.png?raw=true">
+</p>
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
