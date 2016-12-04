@@ -85,7 +85,39 @@
 1) Instalar Node.js. Para ellos accedemos al enlace [NodeJS](https://nodejs.org/es/) y hacemos clic en el botón mostrado.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/Clases.png?raw=true">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/InsNode.png?raw=true">
+</p>
+
+2) Abrimos la consola (cmd) y ejecutamos el comando `node`.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/cmd.png?raw=true">
+</p>
+
+3) Ahora podemos utilizar código JS.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/js.png?raw=true">
+</p>
+
+4) Salimos con *control+c* dos veces.
+
+5) Nos movemos a la carpeta donde deseamos crear un paquete json y escribimos `npm init` para crear un paquete json.
+
+6) Llenamos la información que se nos pide y al final aceptamos con *yes*.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/jason.png?raw=true">
+</p>
+
+7) Observamos que se ha creado un paquete JSON en nuestro computador. Si lo abrimos se muestra la información llenada anteriormente.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/carpeta.png?raw=true">
+</p>
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/cod.png?raw=true">
 </p>
 
 
@@ -108,11 +140,9 @@
 </head>
 ```
 
-<p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/Clases.png?raw=true">
-</p>
 
-* Este archivo HTML está disponible en [Archivo HTML](https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/index.html).
+
+
 
 <br>
 <a href="#Cabecera">A la cabecera</a>

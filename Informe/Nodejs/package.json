@@ -1,0 +1,14 @@
+{
+  "name": "santy",
+  "version": "1.0.0",
+  "description": "Ejemplo para usar npm",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculador"
+  ],
+  "author": "Santiago Lema",
+  "license": "MIT"
+}
