@@ -24,7 +24,7 @@
 
 <a name="Tema"></a>
 ## Tema
-`CSS`
+`NPM`
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
@@ -33,6 +33,7 @@
 - Desarrollar el conocimiento Web.
 - Utilizar Node.js para desarrollar aplicaciones que utilizan JavaScript.
 - Manejar npm para compartir y reutilizar código.
+- Crear una aplicación web sencilla para manejo de usuarios.
 <br>
 
 <a href="#Cabecera">A la cabecera</a>
@@ -80,9 +81,12 @@
 <a name="Desarrollo"></a>
 ## Desarrollo de la práctica
 
-* Para esta práctica, crearemos un archivo *index.html* y lo modificaremos varias veces.
 
-1) Utilizaremos Internal CSS, para ella crearemos un tag `style` dentro `head`.
+1) Instalar Node.js. Para ellos accedemos al enlace [NodeJS](https://nodejs.org/es/) y hacemos clic en el botón mostrado.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/02-CSS/Informe/Im%C3%A1genes/Clases.png?raw=true">
+</p>
 
 
 ```html
