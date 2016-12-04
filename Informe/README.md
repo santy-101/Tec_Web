@@ -102,12 +102,13 @@
 
 4) Salimos con *control+c* dos veces.
 
-5) Nos movemos a la carpeta donde deseamos crear un paquete json y escribimos `npm init` para crear un paquete json.
+5) Nos movemos a la carpeta donde deseamos crear un paquete json y escribimos `npm init` para crearlo.
 
 6) Llenamos la información que se nos pide y al final aceptamos con *yes*.
+* Es importante tomar en cuenta que el campo *main* debe ser llenado como *app.js*.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/jason.png?raw=true">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/paquete.png?raw=true">
 </p>
 
 7) Observamos que se ha creado un paquete JSON en nuestro computador. Si lo abrimos se muestra la información llenada anteriormente.
@@ -120,27 +121,24 @@
 <img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/cod.png?raw=true">
 </p>
 
+8)  Procemos a crear un archivo llamado app.js (recordar que el campo main debía tener este nombre) con el siguiente código
 
-```html
-    <head>
-    <meta charset="UTF-8">
-    <title>Aprendiendo CSS</title>
-    <style>
-        html{
-            
-            background-color: skyblue;    
-        }
-        
-        body{
-            
-            background-color:aquamarine;
-        }
-        
-    </style>
-</head>
+
+```javascript
+  var num1 = 1;
+var num2 = 2;
+
+var resultado = num1 + num2;
+
+console.log(resultado);
 ```
 
+9) Para ejecutarlo escribimos *nodo nombreArchivo*. En este caso *node app.js*
+* Observamos que devuelve 3 (suma de num1 y num2).
 
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/3.png?raw=true">
+</p>
 
 
 
