@@ -1,4 +1,5 @@
 var express = require('express');
+var fs = require('fs');
 
 var app = express();
 
@@ -24,130 +25,25 @@ var usuarios = [
 
 var contador=3;
 
+//Para el path del archivo si no ponemos punto al inicio, estamos  buscando desde C: 
+// A este se le conoce como path absoluto
+// Al usar punto usamos path relativo
 
-app.get('/', function (req, res) {
-    res.send('Hola Mundo!')
-})
+var quePasa ='';
 
-app.get('/Usuario', function (req, res) {
+quePasa='está por leer el archivo';
+console.log(quePasa);
 
-    res.json(usuarios);
+fs.readFile('./paginas/paginas.html',
+            'utf8',
+            function(error,archivoLeido) 
+            {
+            console.log(error);
+           console.log(archivoLeido);
     
-})
+});
 
+quePasa='terminó de leer el archivo';
+console.log(quePasa);
 
-app.get('/Usuario/:idUsuario', function (req, res) {
-    
-    var idActual = req.params.idUsuario;
-    for(var i=0;i<usuarios.length;i++){
-        if(idActual == usuarios[i].id){
-            res.json(usuarios[i]);
-        }
-    }
-    res.send('No existe el Usuario');
-    
-})
-
-app.get('/TecnologiasWeb', function (req, res) {
-    res.send('con Javascript!')
-})
-
-app.post('/Usuario', function (req, res)
-    
-         {
-         console.log(req.query.nombre);
-
-          console.log(req.query.cedula);
-                   
-         if(!req.query.nombre)
-             {
-                 res.send('No envió el nombre');
-             }
-        if(!req.query.cedula)
-             {
-                 res.send('No envió la cédula');
-             }
-    
-        var nuevoUsuario ={
-                       id:contador+1,
-                        nombre:req.query.nombre,
-                       cedula:req.query.cedula
-        }
-    
-        usuarios.push(nuevoUsuario);
-
-        contador = contador++;
-        res.json(nuevoUsuario);
-
-})
-
-
-app.post('/TecnologiasWeb', function (req, res) {
-
-    //request => req
-    //response => res
-    
-    var parametros = req.params;
-    
-    console.log(parametros);
-    
-    var usuario = {
-        nombre:'Santiago',
-        cedula:'000000000'
-    }
-    
-    
-    res.append('token', '1234');
-    
-
-    res.json(usuario);
-    
-    
-//    usuario = {
-//        nombre:usuario.nombre,
-//        cedula:usuario.cedula,
-//        apellido:''
-//    }
-    
-    
-    
-    
-    
-    
-    
-    
-//    console.log('Lo que tengo en el REQUEST es:')
-//    console.log(req);
-//    console.log('Lo que tengo en el RESPONSE es:')
-//    console.log(res);
-//    
-//    console.log('Cabeceras Req:')
-//    console.log(req.headers);
-//    console.log('Cabeceras Res:')
-//    console.log(res.headers);
-//    
-
-  
-    
-//    res.send('{nombre:Santiago,cedula:1716698079}');
-    
-//    if(si los minutos son pares){
-//        res.send('minutos pares')
-//    }else{
-//        res.send('minutos impares')
-//    }
-
-    
-    //res.send('Pikachu');
-
-    
-    
-    
-
-})
-
-
-
-app.listen(puerto, function () {
-    console.log('Example app listening on port ' + puerto + '!')
-})
+//1er parámetro path, 2do codificación, 3ro función
