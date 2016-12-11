@@ -1,4 +1,4 @@
-# Proyecto e Tecnologías Web con Js
+# Proyecto de Tecnologías Web con Js
 
 ## Integrantes: Santiago Lema, Belén Quispi
 
