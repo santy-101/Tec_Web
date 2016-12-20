@@ -34,7 +34,16 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+    '/Quito': {
+    view:'Quito'
+  },
+     '/Guayaquil': {
+    view:'Guayaquil'
   }
+    
+
+
 
   /***************************************************************************
   *                                                                          *

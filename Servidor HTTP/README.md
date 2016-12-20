@@ -40,4 +40,19 @@ Si guardamos una imagen en la carpeta assets/images podemos acceder a ella desde
 >http://localhost:1337/App/fotos/sol.jpg
 
 
+En pipeline.js en la carpeta tasks modificamos el código
 
+>var cssFilesToInject = [
+>//  'styles/**/*.css'
+>    'styles/estilo.css'
+>];
+
+esto hace que solo lea del primer archivo css de la carpeta styles.
+
+En homepage.ejs de views podemos modicar la pagina de inicio.
+
+Tambien en views hay archivos de errores. Los podemos modificar a nuestro gusto.
+
+En config podemos modificar las rutas.
+
+config y luego routes.js
