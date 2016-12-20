@@ -56,3 +56,11 @@ Tambien en views hay archivos de errores. Los podemos modificar a nuestro gusto.
 En config podemos modificar las rutas.
 
 config y luego routes.js
+
+Para generar controladores se utiliza :
+
+> sails generate controller nombreControlador
+
+este controlador se crea en api/controllers
+
+> http://localhost:1337/Saludo/hora
