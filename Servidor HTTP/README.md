@@ -64,3 +64,26 @@ Para generar controladores se utiliza :
 este controlador se crea en api/controllers
 
 > http://localhost:1337/Saludo/hora
+
+
+## Generar Modelos en Sailsjs
+
+> sails generate model nombreModelo
+
+model Administrador
+
+
+## Generar APIs en Sailsjs
+
+> sails generate api nombreAPI
+
+api Usuario
+
+Un api es la fusión de un controlador y un modelo.
+
+((--save para que se instale en un paquete json 
+ npm install --save nodemailer))
+ 
+ ## Migracion tipo
+ 
+ en el archivo models.js de config se puede definir la estrategia descomentando una líenea
