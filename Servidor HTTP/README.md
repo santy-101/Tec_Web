@@ -87,3 +87,25 @@ Un api es la fusión de un controlador y un modelo.
  ## Migracion tipo
  
  en el archivo models.js de config se puede definir la estrategia descomentando una líenea
+ 
+ ## Modelo usuario
+ 
+ crear 
+ 
+ URL:
+ 
+ http://localhost:1337/Usuario
+ 
+ Metodo HTTP: POST
+ 
+ Datos
+ 
+ :
+```javascript 
+{  
+ nombre: 'Santiago',
+ apellido: 'Lema'
+ correo: 'santiago.lema01@epn.edu.ec'
+ }
+ ```
+ con postman podemos agregar usuarios 
