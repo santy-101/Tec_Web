@@ -35,7 +35,7 @@
 - Desarrollar el conocimiento Web.
 - Utilizar Sails.js para desarrollar aplicaciones que utilizan JavaScript.
 - Aprender sobre el patrón de arquitectura de software Modelo-Vista-Controlador.
-- Utilizar comando de Sails.js correctamente.
+- Utilizar comandos de Sails.js para crear proyectos, controladores, etc.
 <br>
 
 <a href="#Cabecera">A la cabecera</a>
@@ -46,24 +46,26 @@
 
 <a name="Sails"></a>
 ### Sails.js
-* Node.js es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome. 
-* Usa un modelo de operaciones E/S sin bloqueo y orientado a eventos, que lo hace liviano y eficiente. 
-* El ecosistema de paquetes de Node.js, npm, es el ecosistema mas grande de librerías de código abierto en el mundo.
+* Sails.js es el framework MVC más popular para Node.js.
+* Está diseñado para construir aplicaciones Node.js prácticas y listas para producción en cuestión de semanas o meses.
+* Las aplicaciones creadas están escritas completamente en JavaScript.
+* Provee un capa de acceso a los datos sin importar la base de datos con la que se trabaje.
+* Autogenera APIs REST.
 
-(Fuente: [Sails.js](https://nodejs.org/es/))
+
+(Fuente: [Sails.js](http://sailsjs.com/))
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
 <a name="Assets"></a>
 ### Assets
 
-* npm facilita a los desarrolladores de JavaScript compartir y reutilizar código, además de actualizar el mismo.
-* Este código compartido es reutilizado por otros desarrolladores en sus propias aplcaciones para resolver problemsa particulares.
-* Las partes de código reutilizable son llamados paquetes o módulos.
-    * Un paquete es un directorio con uno o más archivo él, que además tiempo un archivo llamado *package.json* con metadatos sobre el paquete.
-* Una aplicación típica, como un sitio web, dependerá de decenas o cientes de paquetes.
+* Assets se refiere a los archivos estáticos (js, css, imágenes, etc.) en el servidor que se desea que sean accesibles para los demás.
+En Sails, estos archivos se ubican en la carpeta **assets/*.
+* Cuando se levanta un aplicación, se añaden archivos a la carpeta **assets/**, o se modifican assets existentes, Sails procesa y sincroniza estos archivos a una carpeta oculta **.tmp/public/**.
+    * Los contenidos de esta carpeta oculta son los que Sails muestra en tiempo de ejecución.
 
-(Fuente: [Assets](https://docs.npmjs.com/getting-started/what-is-npm))
+(Fuente: [Assets](http://sailsjs.com/documentation/concepts/assets))
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
