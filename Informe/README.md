@@ -2,11 +2,11 @@
 ---
 
 ### Materia: `Tecnologías Web con JavaScript`
-### Tema : `NPM` 
-### Fecha : `2016-12-21`
-### Estudiante : `Santiago Fernando Lema Orquera`
-### Profesor : `Tania Calle - Adrián Eguez`
-### Número de informe : `5`
+### Tema: `NPM` 
+### Fecha: `2016-12-21`
+### Estudiante: `Santiago Fernando Lema Orquera`
+### Profesor: `Tania Calle - Adrián Eguez`
+### Número de informe: `5`
 
 <a name="Cabecera"></a>
 ## Índice de contenidos
@@ -49,7 +49,7 @@
 * Sails.js es el framework MVC más popular para Node.js.
 * Está diseñado para construir aplicaciones Node.js prácticas y listas para producción en cuestión de semanas o meses.
 * Las aplicaciones creadas están escritas completamente en JavaScript.
-* Provee un capa de acceso a los datos sin importar la base de datos con la que se trabaje.
+* Provee una capa de acceso a los datos sin importar la base de datos con la que se trabaje.
 * Autogenera APIs REST.
 
 
@@ -62,7 +62,7 @@
 
 * Assets se refiere a los archivos estáticos (js, css, imágenes, etc.) en el servidor que se desea que sean accesibles para los demás.
 En Sails, estos archivos se ubican en la carpeta **assets/*.
-* Cuando se levanta un aplicación, se añaden archivos a la carpeta **assets/**, o se modifican assets existentes, Sails procesa y sincroniza estos archivos a una carpeta oculta **.tmp/public/**.
+* Cuando se levanta una aplicación, se añaden archivos a la carpeta **assets/**, o se modifican assets existentes, Sails procesa y sincroniza estos archivos a una carpeta oculta **.tmp/public/**.
     * Los contenidos de esta carpeta oculta son los que Sails muestra en tiempo de ejecución.
 
 (Fuente: [Assets](http://sailsjs.com/documentation/concepts/assets))
@@ -72,38 +72,36 @@ En Sails, estos archivos se ubican en la carpeta **assets/*.
 <a name="Views"></a>
 ### Views
 
-* npm facilita a los desarrolladores de JavaScript compartir y reutilizar código, además de actualizar el mismo.
-* Este código compartido es reutilizado por otros desarrolladores en sus propias aplcaciones para resolver problemsa particulares.
-* Las partes de código reutilizable son llamados paquetes o módulos.
-    * Un paquete es un directorio con uno o más archivo él, que además tiempo un archivo llamado *package.json* con metadatos sobre el paquete.
-* Una aplicación típica, como un sitio web, dependerá de decenas o cientes de paquetes.
+* En Sails, las vistas son plantillas que son compiladas en el servidor en páginas HTML. 
+* En la mayoría de casos, las vistas son usadas como respuestas a una petición HTTP entrante.
+* Por defecto, Sails está configurado para usar EJS (JS embebido) como su motor de vistas.
+* Sails soporta todos los motores de vistas compatibles con Express.
 
-(Fuente: [Views](https://docs.npmjs.com/getting-started/what-is-npm))
+(Fuente: [Views](http://sailsjs.com/documentation/concepts/views))
 <br>
 <a href="#Cabecera">A la cabecera</a>
+
 <a name="Pipelines"></a>
 ### Pipelines
 
-* npm facilita a los desarrolladores de JavaScript compartir y reutilizar código, además de actualizar el mismo.
-* Este código compartido es reutilizado por otros desarrolladores en sus propias aplcaciones para resolver problemsa particulares.
-* Las partes de código reutilizable son llamados paquetes o módulos.
-    * Un paquete es un directorio con uno o más archivo él, que además tiempo un archivo llamado *package.json* con metadatos sobre el paquete.
-* Una aplicación típica, como un sitio web, dependerá de decenas o cientes de paquetes.
+* El pipeline de assets es el lugar donde se organizan los assets que serán inyectados en las vistas.
+* Puede ser encontrado en el archivo **tasks.pipeline.js**
+* El archivo **pipeline.js* en la aplicación Sails determina el orden en el que las plantillas propias y del clientes serán compiladas y enlazadas como `<script>`.
 
-(Fuente: [Pipelines](https://docs.npmjs.com/getting-started/what-is-npm))
+(Fuente: [Pipelines](http://sailsjs.com/documentation/anatomy/my-app/tasks/pipeline-js))
 <br>
 <a href="#Cabecera">A la cabecera</a>
 <a name="Controllers"></a>
+
 ### Controllers
 
-* npm facilita a los desarrolladores de JavaScript compartir y reutilizar código, además de actualizar el mismo.
-* Este código compartido es reutilizado por otros desarrolladores en sus propias aplcaciones para resolver problemsa particulares.
-* Las partes de código reutilizable son llamados paquetes o módulos.
-    * Un paquete es un directorio con uno o más archivo él, que además tiempo un archivo llamado *package.json* con metadatos sobre el paquete.
-* Una aplicación típica, como un sitio web, dependerá de decenas o cientes de paquetes.
+* Los controladores son los objetos principales en la aplicación Sails y son los responsables de responder peticiones de un navegador web, aplicación móvil u otro sistema capaz de comunicarse con un servidor.
+* Generalmente actuan como un punto medio entre los modelos y las vistas. 
+* Para muchas aplicaciones, los controladores contendrán la lógica del negocio del proyecto.
 
-(Fuente: [Controllers](https://docs.npmjs.com/getting-started/what-is-npm))
+(Fuente: [Controllers](http://sailsjs.com/documentation/concepts/controllers))
 <br>
+
 <a href="#Cabecera">A la cabecera</a>
 
 
@@ -262,7 +260,7 @@ console.log(calculadora.imprimirSuma1y2());
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones
 * Se aprendieron conocimientos básicos sobre Sails.js.
-* Se aprendió a utilizar Sails.js y npm para crear un pequeño servidor web..
+* Se aprendió a utilizar Sails.js y npm para crear un pequeño servidor web.
 * Se aprendió sobre los assets, controladores, vistas y pipelines.
 * Se recomienda leer la documentación original de las herramientas utilizadas para entender de mejor manera su utilización.
 * Es necesario mantener sencillo el código para que pueda ser entendido por otros.
