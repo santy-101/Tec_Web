@@ -113,7 +113,7 @@ En Sails, estos archivos se ubican en la carpeta **assets/*.
 > npm install -g sails
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails_01/Informe/Im%C3%A1genes/inst.png?raw=true">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/inst.png?raw=true">
 </p>
 
 
@@ -123,7 +123,28 @@ En Sails, estos archivos se ubican en la carpeta **assets/*.
 
 para crear el proyecto.
 
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/new.png?raw=true">
+</p>
+ 
+4) Observamos que se ha creado una carpeta llamada *Proyecto* dentro de dicho directorio.
 
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/carpeta.png?raw=true">
+</p>
+ 
+5) Ingresamos a la carpeta creada en la consola y levantamos el servidor con el comando:
+> sails lift
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/lift.png?raw=true">
+</p>
+
+6) En el navegador ingresamos a la URL ```http://localhost:1337/``` y observamos la siguiente página.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/web.png?raw=true">
+</p>
 ```javascript
 var num1 = 1;
 var num2 = 2;
