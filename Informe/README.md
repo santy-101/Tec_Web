@@ -155,7 +155,7 @@ para crear el proyecto.
 <img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/archivos.png?raw=true">
 </p>
 
-8) Modifcaremos el contenido de dichos archivos.
+8) Modificaremos el contenido de dichos archivos.
 
 * index.html
 
@@ -170,12 +170,13 @@ para crear el proyecto.
 <body>
    <h1>Hola Mundo</h1>
 
-   <img src="fotos/sol.jpg" alt="S">
     <script src="app.js"></script>
     
 </body>
 </html>
 ```
+- Dentro de este documento estamos enlazando el archivo estilos.css y app.js.
+- Además, mostramos un texto que dice *Hola Mundo*
 
 * estilos.css
 
@@ -187,10 +188,20 @@ body{
 }
 ```
 
+- Aquí, hacemos que el color de fondo sea azul verdoso y el color de texto sea celeste claro.
+
 * app.js
 ```javascript
 alert("No es bueno usar alertas");
 ```
+- Mostramos una alerta.
+
+9) Vamos a la URL ```http://localhost:1337/App/index.html``` y observamos dicha página html con los estilos y código js creados anteriormente.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/archivos.png?raw=true">
+</p>
+
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
