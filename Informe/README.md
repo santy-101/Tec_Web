@@ -109,14 +109,19 @@ En Sails, estos archivos se ubican en la carpeta **assets/*.
 ## Desarrollo de la práctica
 
 
-1) Instalar Node.js. Para ellos accedemos al enlace [NodeJS](https://nodejs.org/es/) y hacemos clic en el botón mostrado.
+1) Instalar Sails.js. Para ellos accedemos abrimos la consola y usamos el comando:
+> npm install -g sails
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/07-Node_js/Informe/Im%C3%A1genes/InsNode.png?raw=true">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails_01/Informe/Im%C3%A1genes/inst.png?raw=true">
 </p>
 
 
-2)  Procemos a crear un archivo llamado app.js (recordar que el campo main debía tener este nombre) con el siguiente código:
+2) Ahora usando la consola nos movemos al directorio donde queremos crear el proyecto Sails.
+3) Una vez aquí, usamos el comando:
+> sails new nombreProyecto
+
+para crear el proyecto.
 
 
 ```javascript
