@@ -155,16 +155,42 @@ para crear el proyecto.
 <img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/archivos.png?raw=true">
 </p>
 
+8) Modifcaremos el contenido de dichos archivos.
+
+* index.html
+
 ```javascript
-var num1 = 1;
-var num2 = 2;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+   <h1>Hola Mundo</h1>
 
-var resultado = num1 + num2;
-
-console.log(resultado);
+   <img src="fotos/sol.jpg" alt="S">
+    <script src="app.js"></script>
+    
+</body>
+</html>
 ```
 
+* estilos.css
 
+
+```javascript
+body{
+    background-color:darkseagreen;
+    color:aliceblue;
+}
+```
+
+* app.js
+```javascript
+alert("No es bueno usar alertas");
+```
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
