@@ -145,6 +145,16 @@ para crear el proyecto.
 <p align="center">
 <img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/web.png?raw=true">
 </p>
+
+7) Dentro de la carpeta *assets* crearemos otra carpeta llamada *App* y dentro de esta 3 archivos:
+* index.html
+* estilos.css
+* app.js
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/archivos.png?raw=true">
+</p>
+
 ```javascript
 var num1 = 1;
 var num2 = 2;
