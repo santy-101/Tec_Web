@@ -157,7 +157,7 @@ para crear el proyecto.
 
 8) Modificaremos el contenido de dichos archivos.
 
-* index.html
+#### index.html
 
 ```javascript
 <!DOCTYPE html>
@@ -178,7 +178,7 @@ para crear el proyecto.
 - Dentro de este documento estamos enlazando el archivo estilos.css y app.js.
 - Además, mostramos un texto que dice *Hola Mundo*
 
-* estilos.css
+#### estilos.css
 
 
 ```javascript
@@ -190,7 +190,7 @@ body{
 
 - Aquí, hacemos que el color de fondo sea azul verdoso y el color de texto sea celeste claro.
 
-* app.js
+#### app.js
 ```javascript
 alert("No es bueno usar alertas");
 ```
@@ -199,8 +199,48 @@ alert("No es bueno usar alertas");
 9) Vamos a la URL ```http://localhost:1337/App/index.html``` y observamos dicha página html con los estilos y código js creados anteriormente.
 
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/archivos.png?raw=true">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/html.png?raw=true">
 </p>
+
+10) Podemos crear carpeta dentro de **App** y guardar archivos para usarlos dentro de nuestra página. Por ejemplo, crear una carpeta para fotos.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/fotos.png?raw=true">
+</p>
+
+11) Podemos acceder a esta imagen con la URL
+```http://localhost:1337/App/fotos/sol.jpg``` o agregarla a nuestro *index.html* con el tag ```<img>```.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/sol.png?raw=true">
+</p>
+
+12) Dentro del archivo **pipeline.js** que se encuentra dentro de la carpeta **tasks** observamos que archivos css se inyectan en el proyecto.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/inject.png?raw=true">
+</p>
+
+13) Para inyectar archivos css debemos crearlos dentro de la carpeta **styles** dentro de *assets*.
+
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/copiar.png?raw=true">
+</p>
+
+14) Si dentro del código de **pipeline.js** enlazamos el archivo css que creamos anteriormente, observamos que la próxima vez que iniciamos la página de inicio, esta usa los estilos definidos por nosotros.
+
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/nuevosestilos.png?raw=true">
+</p>
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/nuevapag.png?raw=true">
+</p>
+
+
+
 
 <br>
 <a href="#Cabecera">A la cabecera</a>
