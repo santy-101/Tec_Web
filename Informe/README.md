@@ -86,7 +86,7 @@ En Sails, estos archivos se ubican en la carpeta **assets/*.
 
 * El pipeline de assets es el lugar donde se organizan los assets que serán inyectados en las vistas.
 * Puede ser encontrado en el archivo **tasks.pipeline.js**
-* El archivo **pipeline.js* en la aplicación Sails determina el orden en el que las plantillas propias y del clientes serán compiladas y enlazadas como `<script>`.
+* El archivo **pipeline.js* en la aplicación Sails determina el orden en el que las plantillas propias y del cliente serán compiladas y enlazadas como `<script>`.
 
 (Fuente: [Pipelines](http://sailsjs.com/documentation/anatomy/my-app/tasks/pipeline-js))
 <br>
@@ -96,7 +96,7 @@ En Sails, estos archivos se ubican en la carpeta **assets/*.
 ### Controllers
 
 * Los controladores son los objetos principales en la aplicación Sails y son los responsables de responder peticiones de un navegador web, aplicación móvil u otro sistema capaz de comunicarse con un servidor.
-* Generalmente actuan como un punto medio entre los modelos y las vistas. 
+* Generalmente actúan como un punto medio entre los modelos y las vistas. 
 * Para muchas aplicaciones, los controladores contendrán la lógica del negocio del proyecto.
 
 (Fuente: [Controllers](http://sailsjs.com/documentation/concepts/controllers))
@@ -118,6 +118,7 @@ En Sails, estos archivos se ubican en la carpeta **assets/*.
 
 
 2) Ahora usando la consola nos movemos al directorio donde queremos crear el proyecto Sails.
+
 3) Una vez aquí, usamos el comando:
 > sails new nombreProyecto
 
@@ -356,7 +357,7 @@ module.exports.routes = {
   }
     
 ```    
-22) Debido a que modificamos archivos de configuración, debemos reiniciar sails. Ahora en el navegador, colocalos la URL: ```http://localhost:1337/Quito``` o ```http://localhost:1337/Guayaquil``` y observaremos las nuevas vistas.
+22) Debido a que modificamos archivos de configuración, debemos reiniciar sails. Ahora en el navegador, colocamos la URL: ```http://localhost:1337/Quito``` o ```http://localhost:1337/Guayaquil``` y observaremos las nuevas vistas.
 
 <p align="center">
 <img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/newvistas.png?raw=true">
@@ -419,7 +420,7 @@ module.exports.routes = {
 <img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/comando.png?raw=true">
 </p>
 
-26) Observamos como se ha creado un archivo **SaludoController.js** dentro de la carpeta **/api/controllers**
+26) Observamos que se ha creado un archivo **SaludoController.js** dentro de la carpeta **/api/controllers**
 
 
 <p align="center">
