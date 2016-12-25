@@ -300,8 +300,6 @@ alert("No es bueno usar alertas");
 
 19) Si queremos acceder a estas nuevas vistas se nos mostrará la página de error 404.
 
-```http://localhost:1337/Quito```
-
 <p align="center">
 <img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/error.png?raw=true">
 </p>
