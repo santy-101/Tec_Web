@@ -415,13 +415,93 @@ module.exports.routes = {
 25) Finalmente, vamos a crear un controlador, para ello usamos el comando:
 > sails generate controller nombreControlador
 
-
 <p align="center">
-<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/cod.png?raw=true">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/comando.png?raw=true">
 </p>
 
+26) Observamos como se ha creado un archivo **SaludoController.js** dentro de la carpeta **/api/controllers**
 
-<1br>
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/api.png?raw=true">
+</p>
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/saludo.png?raw=true">
+</p>
+
+27) Modificamos el contenido.
+
+```javascript
+module.exports = {
+
+    hola: function (req, res) {
+        
+        
+        var parametros = req.allParams()
+
+        if (req.method == 'GET') {
+            
+            res.json({
+                    nombre: 'hola get',
+                    para:parametros
+                });
+
+
+        } else {
+
+            if (req.method == 'POST') {
+                res.json({
+                    nombre: 'hola post'
+                });
+            } else {
+                res.json({
+                    nombre: 'hola todos'
+                });
+            }
+
+        }
+
+    },
+    adios: function (req, res) {
+        res.send('Adios');
+    },
+    hora: function (req, res) {
+        res.send('Hora');
+    }
+     
+
+};
+```
+
+28) Usamos el navegador para verificar que los controladores funciones correctamente CON GET.
+
+* Si usamos la URL ```http://localhost:1337/Saludo/hora``` nos devuelve *Hora*
+
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/hora.png?raw=true">
+</p>
+
+* Con ```http://localhost:1337/Saludo/adios``` devuelve *Adios*
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/adios.png?raw=true">
+</p>
+
+* Por otro lado, ```http://localhost:1337/Saludo/hola``` devuelve un objeto json.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/holaget.png?raw=true">
+</p>
+
+* Con postman podemos ver el comportamiento al usar POST.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/holapost.png?raw=true">
+</p>
+
+<br>
 <a href="#Cabecera">A la cabecera</a>
 
 <a name="Conclusiones y Recomendaciones"></a>
@@ -429,6 +509,7 @@ module.exports.routes = {
 * Se aprendieron conocimientos básicos sobre Sails.js.
 * Se aprendió a utilizar Sails.js y npm para crear un pequeño servidor web.
 * Se aprendió sobre los assets, controladores, vistas y pipelines.
+* Se aprendió como modificar algunos archivos para hacer que las páginas web se muestren de manera distinta.
 * Se recomienda leer la documentación original de las herramientas utilizadas para entender de mejor manera su utilización.
 * Es necesario mantener sencillo el código para que pueda ser entendido por otros.
 
