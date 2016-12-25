@@ -221,7 +221,7 @@ alert("No es bueno usar alertas");
 <img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/inject.png?raw=true">
 </p>
 
-13) Para inyectar archivos css debemos crearlos dentro de la carpeta **styles** dentro de *assets*.
+13) Para inyectar archivos css debemos crearlos dentro de la carpeta **styles** dentro de **assets**.
 
 
 <p align="center">
@@ -239,9 +239,124 @@ alert("No es bueno usar alertas");
 <img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/nuevapag.png?raw=true">
 </p>
 
+* Si contamos con varios archivos css, estos se leerán de acuerdo al orden en el que los coloquemos en **pipeline.js**
+
+15) Ahora vamos a trabajar con las vistas, estas se encuentran dentro de la carpeta *views*.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/views.png?raw=true">
+</p>
+
+* El formato de las vistas es *ejs*. 
+
+16) El archivo **homepage.ejs** contiene lo que se muestra en la página de inicio de nuestro proyecto. En este caso lo modificaremos cambiado su código.
 
 
+```javascript
+<style>
+    .rojo{
+        
+        background-color:red
+    
+    }
+</style>
+<div class ="rojo">
 
+<h1>Aquí empieza el homepage</h1>
+
+
+<h1>Mensaje</h1>
+
+
+<h1>Aquí finaliza el homepage</h1>
+</div>
+```
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/homepage.png?raw=true">
+</p>
+
+17) Por otro lado, los archivos **403, 404 y 500** indican que se mostrará en el navegador en caso de error.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/404.png?raw=true">
+</p>
+
+18) Ahora, vamos a crear nuevas vistas. Para ellos simplemente debemos crear más archivos dentro de la carpeta **views**.
+* En este caso usaremos Quito y Guayaquil como vistas.
+
+#### Quito
+```javascript
+<h1>Quito</h1>
+```
+#### Guayaquil
+
+```javascript
+<h1>Guayaquil</h1>
+```
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/quito.png?raw=true">
+</p>
+
+19) Si queremos acceder a estas nuevas vistas se nos mostrará la página de error 404.
+```http://localhost:1337/Quito```
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/error.png?raw=true">
+</p>
+
+20) Para poder acceder a estas nuevas vistas, debemos modificar el archivo **routes.js** dentro de la carpeta **config**.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/arcroutes.png?raw=true">
+</p>
+
+21) Modificamos el código:
+
+```javascript
+module.exports.routes = {
+
+  /***************************************************************************
+  *                                                                          *
+  * Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, *
+  * etc. depending on your default view engine) your home page.              *
+  *                                                                          *
+  * (Alternatively, remove this and add an `index.html` file in your         *
+  * `assets` directory)                                                      *
+  *                                                                          *
+  ***************************************************************************/
+
+ '/': {
+    view: 'homepage'
+  }
+```
+    Para que se vea así:
+```javascript
+module.exports.routes = {
+
+  /***************************************************************************
+  *                                                                          *
+  * Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, *
+  * etc. depending on your default view engine) your home page.              *
+  *                                                                          *
+  * (Alternatively, remove this and add an `index.html` file in your         *
+  * `assets` directory)                                                      *
+  *                                                                          *
+  ***************************************************************************/
+
+  '/': {
+    view: 'homepage'
+  },
+    '/Quito': {
+    view:'Quito'
+  },
+     '/Guayaquil': {
+    view:'Guayaquil'
+  }
+    
+
+```    
+    
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
