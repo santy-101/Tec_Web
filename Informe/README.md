@@ -299,6 +299,7 @@ alert("No es bueno usar alertas");
 </p>
 
 19) Si queremos acceder a estas nuevas vistas se nos mostrará la página de error 404.
+
 ```http://localhost:1337/Quito```
 
 <p align="center">
@@ -354,9 +355,15 @@ module.exports.routes = {
     view:'Guayaquil'
   }
     
-
 ```    
-    
+22) Debido a que modificamos archivos de configuración, debemos reiniciar sails. Ahora en el navegador, colocalos la URL: ```http://localhost:1337/Quito``` o ```http://localhost:1337/Guayaquil``` y observaremos las nuevas vistas.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/newvistas.png?raw=true">
+</p>
+
+23) 
+
 <br>
 <a href="#Cabecera">A la cabecera</a>
 
