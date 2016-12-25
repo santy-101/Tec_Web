@@ -329,7 +329,9 @@ module.exports.routes = {
     view: 'homepage'
   }
 ```
-    Para que se vea así:
+
+Para que se vea así:
+
 ```javascript
 module.exports.routes = {
 
@@ -360,9 +362,66 @@ module.exports.routes = {
 <img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/newvistas.png?raw=true">
 </p>
 
-23) 
+23) También podemos modificar la vista **layout.ejs** para cambiar cómo se mostrará **homepage**.
 
-<br>
+```javascript
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/estilos.css">
+    <!--STYLES END-->
+  </head>
+
+  <body>
+    <%- body %>
+
+
+
+    <!--
+```
+    Se vuelve esto:
+```javascript   
+ <!--STYLES-->
+    <link rel="stylesheet" href="/styles/estilos.css">
+    <!--STYLES END-->
+  </head>
+  
+  
+  <body>
+  <h1>Hola</h1>
+  <ul>
+      <li><a href="/Quito">Quito</a>
+      </li>
+      <li>
+          <a href="/Guayaquil">Guayaquil</a>
+      </li>
+      
+  </ul>
+  <%- body %>
+      <h1>Adiós</h1>
+```
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/layout.png?raw=true">
+</p>
+
+* Creamos dos textos, uno que dice Hola y otro Adiós.
+* Creamos dos enlaces como listas no ordenadas, uno a la vista Quito y otro a Guayaquil.
+
+24) Observamos que el homepage se copia automáticamente dentro del body y por eso se muestra automáticamente.
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/cod.png?raw=true">
+</p>
+
+25) Finalmente, vamos a crear un controlador, para ello usamos el comando:
+> sails generate controller nombreControlador
+
+
+<p align="center">
+<img src="https://github.com/santy-101/Tec_Web/blob/10-Sails-01/Informe/Im%C3%A1genes/cod.png?raw=true">
+</p>
+
+
+<1br>
 <a href="#Cabecera">A la cabecera</a>
 
 <a name="Conclusiones y Recomendaciones"></a>
