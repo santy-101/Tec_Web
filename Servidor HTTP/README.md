@@ -131,3 +131,13 @@ Creamos controlador para ADministrador. En la carpeta controllers, creamos Admin
 - Eliminar  http://localhost:1337/Usuario/destroy/1
     
 - Actualizar http://localhost:1337/Usuario/update/1?nombres=Carlos
+
+Estos son shortcuts, por defecto estan activados. Si los desactivamos, no podemos usarlos
+
+*   // rest: true, permite usar los metodos post, get, etc. 
+
+
+Usamos postman para crear usuario
+
+el codigo en usuariocontroller revisa q se llenen todos lo campos obligatorios y q usemos metodo push.
+

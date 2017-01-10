@@ -16,7 +16,9 @@ module.exports = {
         var parametros = req.allParams();
 
         console.log(parametros);
-
+        
+        if(req.method=='POST')
+{
         if (parametros.nombres && parametros.apellidos)
 
         {
@@ -40,6 +42,10 @@ module.exports = {
             // bad request
             return res.badRequest('Llene su nombre y apellido');
 
+        }
+}
+        else{
+            return res.badRequest('Método inválido');
         }
 //        Usuario.create({
 //            nombres: 'Pepe José',
