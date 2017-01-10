@@ -45,7 +45,13 @@ module.exports.blueprints = {
   ***************************************************************************/
 
   // actions: true,
-
+    
+//    http://localhost:1337/Usuario/create?nombres=Dani&apellidos=Ramirez
+//    
+// http://localhost:1337/Usuario/destroy/1
+//    
+//        http://localhost:1337/Usuario/update/1?nombres=Carlos
+    
   /***************************************************************************
   *                                                                          *
   * RESTful routes (`sails.config.blueprints.rest`)                          *
@@ -83,7 +89,7 @@ module.exports.blueprints = {
   *                                                                          *
   ***************************************************************************/
 
-  // shortcuts: true,
+  shortcuts: false,
 
   /***************************************************************************
   *                                                                          *
@@ -157,6 +163,6 @@ module.exports.blueprints = {
   *                                                                           *
   ****************************************************************************/
 
-  // defaultLimit: 30
+  defaultLimit: 5
 
 };

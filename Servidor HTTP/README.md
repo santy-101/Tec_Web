@@ -109,3 +109,25 @@ Un api es la fusión de un controlador y un modelo.
  }
  ```
  con postman podemos agregar usuarios 
+ 
+ ## Buscar
+ GET
+ URL 
+ http://localhost:1337/Usuario/1
+ 
+ ## Borrar
+ 'DELETE'
+ 
+ ## Actualizar
+'PUT'
+
+Creamos controlador para ADministrador. En la carpeta controllers, creamos AdministradorController. js
+
+- Luego vamos a blueprints en la carpeta config
+- Descomentamos default limit y ponemos 5 (devuelve solo 5 usuarios)
+
+-Crear http://localhost:1337/Usuario/create?nombres=Daniela&apellidos=Ramirez
+
+- Eliminar  http://localhost:1337/Usuario/destroy/1
+    
+- Actualizar http://localhost:1337/Usuario/update/1?nombres=Carlos
