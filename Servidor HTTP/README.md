@@ -141,3 +141,13 @@ Usamos postman para crear usuario
 
 el codigo en usuariocontroller revisa q se llenen todos lo campos obligatorios y q usemos metodo push.
 
+creamos modelos raza y mascota con el comando sails generate api Raza/Mascota
+
+luego modificamos elcodigo de cada una. estan en la carpeta api, models,... 
+
+luego creamos las razas usando postman y luego mascotas con una raza.
+
+- las razas en mascotas se añaden por ID (numero 1 2 3)
+
+
+
