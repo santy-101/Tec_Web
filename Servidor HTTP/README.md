@@ -149,5 +149,8 @@ luego creamos las razas usando postman y luego mascotas con una raza.
 
 - las razas en mascotas se añaden por ID (numero 1 2 3)
 
+- crear un controllador Rutas sails generate controller Rutas
+- luego creamos una vista home
+
 
 

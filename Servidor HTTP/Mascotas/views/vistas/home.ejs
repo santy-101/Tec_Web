@@ -21,5 +21,9 @@
 
             <h1>Home</h1>
             <h2><%=mauricio.nombre  %>-<%= mauricio.apellido%> -<%= numero %></h2>
-            <h3><%=arregloMascota[0].nombre%></h3>
+
+            <% for(var i=0; i<arregloMascota.length; i++) {%>
+                <h3><%=arregloMascota[i].nombre%></h3>
+
+                <%} %>
 </div>

@@ -20,7 +20,16 @@ module.exports = {
             }
             
         })
-    }
+    },
+    
+    crearUsuario: function (req,res){
+         //res.view (String: Nombre vista, Datos JSON)
+        return res.view('vistas/crearUsuario')
+            
+        }
+        
+        
+
 	
 };
 

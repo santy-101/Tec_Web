@@ -63,6 +63,54 @@ module.exports = {
 //            sails.log.info(usuarioCreado);
 //            return res.ok(usuarioCreado);
 //        });
+    },
+    
+    crearUsuarioForm: function (req,res){
+        var parametros = req.allParams();
+
+        console.log(parametros);
+        
+        if(req.method=='POST')
+{
+        if (parametros.nombres && parametros.apellidos)
+
+        {
+            //creo el usuario
+
+            Usuario.create({
+                nombres: parametros.nombres,
+                apellidos: parametros.apellidos,
+                correo: parametros.correo
+            }).exec(function (err, usuarioCreado) {
+
+                if (err) {
+                    return res.serverError(err);
+                }
+
+                sails.log.info(usuarioCreado);
+                return res.view('vistas/home',{
+            titulo: 'Inicio',
+            numero:1,
+            mauricio:
+            {
+                nombre:'Mauricio',
+                apellido:'Larco'
+            }
+            
+        });
+            });
+
+        } else {
+            // bad request
+            return res.badRequest('Llene su nombre y apellido');
+
+        }
+}
+        else{
+            return res.badRequest('Método inválido');
+        }
+        
+        
     }
 
 };

@@ -42,7 +42,7 @@ module.exports.routes = {
         view: 'Guayaquil'
     },
     'get /Inicio': 'RutasController.home',
-
+    'get /CrearUsuario': 'RutasController.CrearUsuario',
 
 
 
