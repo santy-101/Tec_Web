@@ -42,7 +42,6 @@ module.exports.routes = {
     
     'get /EditarUsuario': 'RutasController.editarUsuario', 
 
-
     'get /Error': 'RutasController.error'
     
 

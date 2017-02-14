@@ -138,7 +138,7 @@ module.exports = {
     editarUsuario: function (req, res) {
         var parametros = req.allParams();
 
-        if (parametros.id && (parametros.nombres || parametros.apellidos || parametros.correo)) {
+        if (parametros.idUsuario && (parametros.nombres || parametros.apellidos || parametros.correo)) {
 
 
             var usuarioAEditar = {
@@ -160,7 +160,7 @@ module.exports = {
             }
 
             Usuario.update({
-                id: parametros.id
+                id: parametros.idUsuario
             }, usuarioAEditar).exec(function (errorInesperado, UsuarioRemovido) {
                 if (errorInesperado) {
                     return res.view('vistas/Error', {
@@ -193,8 +193,8 @@ module.exports = {
         } else {
             return res.view('vistas/Error', {
                 error: {
-                    desripcion: "Necesitamos el ID para borrar al Usuario",
-                    rawError: "No envia ID",
+                    desripcion: "Necesitamos que envies los parámetros ",
+                    rawError: "No envia Parámetros",
                     url: "/ListarUsuarios"
                 }
             });

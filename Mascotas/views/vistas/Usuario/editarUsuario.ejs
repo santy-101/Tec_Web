@@ -1,19 +1,5 @@
-<%
-if(!usuarioAEditar){
-    var usuarioAEditar = {
-  "nombres": "Santiago",
-  "apellidos": "Lema",
-  "correo": "santylema8@gmail.com",
-  "createdAt": "2017-02-08T19:19:58.022Z",
-  "updatedAt": "2017-02-08T19:19:58.022Z",
-  "id": 1
-}
-    
-}
-%>
 
-
-    <h1>Editar Usuario - <%= usuarioAEditar.nombres %></h1>
+<h1>Editar Usuario  - <%= usuarioAEditar.nombres %></h1>
 
     <div class="row">
         <div class="col-sm-5">
@@ -36,7 +22,7 @@ if(!usuarioAEditar){
                     <input type="hidden" name="idUsuario" value="<%= usuarioAEditar.id %>">
                 </div>
 
-                <button type="submit" class="btn btn-success">Editar Usuario :)</button>
+                <button type="submit" class="btn btn-block">Editar Usuario :)</button>
             </form>
 
         </div>
