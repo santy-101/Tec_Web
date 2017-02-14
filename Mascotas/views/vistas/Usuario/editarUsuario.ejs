@@ -1,0 +1,52 @@
+<%
+if(!usuarioAEditar){
+    var usuarioAEditar = {
+  "nombres": "Santiago",
+  "apellidos": "Lema",
+  "correo": "santylema8@gmail.com",
+  "createdAt": "2017-02-08T19:19:58.022Z",
+  "updatedAt": "2017-02-08T19:19:58.022Z",
+  "id": 1
+}
+    
+}
+%>
+
+
+    <h1>Editar Usuario - <%= usuarioAEditar.nombres %></h1>
+
+    <div class="row">
+        <div class="col-sm-5">
+            <form action="/Usuario/EditarUsuario" method="post">
+
+                <div class="form-group">
+                    <label>Nombres</label>
+                    <input type="text" class="form-control" placeholder="Ingrese sus Nombres" name="nombres" value="<%= usuarioAEditar.nombres %>">
+                </div>
+
+                <div class="form-group">
+                    <label>Apellidos</label>
+                    <input type="text" class="form-control" placeholder="Ingrese sus Apellidos" name="apellidos" value="<%= usuarioAEditar.apellidos %>">
+                </div>
+
+                <div class="form-group">
+                    <label>Correo</label>
+                    <input type="email" class="form-control" placeholder="Ingrese su correo" name="correo" value="<%= usuarioAEditar.correo %>">
+
+                    <input type="hidden" name="idUsuario" value="<%= usuarioAEditar.id %>">
+                </div>
+
+                <button type="submit" class="btn btn-success">Editar Usuario :)</button>
+            </form>
+
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5 text-center">
+            <h2><%= usuarioAEditar.apellidos %></h2>
+            <h4><%= usuarioAEditar.nombres%></h4>
+            <p>
+                <%= usuarioAEditar.correo %>
+            </p>
+        </div>
+
+    </div>

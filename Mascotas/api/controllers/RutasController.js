@@ -41,6 +41,43 @@ module.exports = {
                     usuarios: usuariosEncontrados
                 });
             })
+    },
+
+    editarUsuario: function (req, res) {
+
+        var parametros = req.allParams();
+
+        if (parametros.id) {
+            Usuario.findOne({
+                id: parametros.id
+
+            }).exec(
+                function (errorInesperado, UsuarioEncontrado) {
+                    if (errorInesperado) {
+                        return res.view('vistas/Error', {
+                            error: {
+                                desripcion: "Error Inesperado",
+                                rawError: errorInesperado,
+                                url: "/ListarUsuarios"
+                            }
+                        });
+                    }
+                    
+                    sails.log.info(UsuarioEncontrado);
+                })
+
+
+
+        } else {
+            return res.view('vistas/Error', {
+                error: {
+                    desripcion: "No ha enviado el parámetro ID",
+                    rawError: "Faltan Parámetros",
+                    url: "/ListarUsuarios"
+                }
+            });
+        }
+        return res.view('vistas/Usuario/editarUsuario')
     }
 
 };
