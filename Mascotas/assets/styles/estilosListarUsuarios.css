@@ -1,0 +1,17 @@
+.ma-borde{
+    
+    border-style: groove;
+}
+
+.ma-margen-top-botoom
+{
+    margin-top: 20px;
+    margin-bottom :20px;
+}
+
+.ma-padding-top-bottom
+{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
