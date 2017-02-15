@@ -61,7 +61,8 @@ module.exports = {
                             },
                             // OK.
                             success: function () {
-                                return res.ok("Credencial Segura")
+                                req.session.credencialSegura =  true;
+                                    return res.view("vistas/home");
                             },
                         });
 
@@ -87,5 +88,25 @@ module.exports = {
                 }
             });
         }
+    },
+    
+    
+    tieneSesion : function (req,res)
+    {
+        if (req.session.credencialSegura)
+            {
+                return res.ok("Sí tiene la credencial segura")
+            }
+        else
+            {
+                return res.forbidden();
+            }
+    },
+    
+    logout: function (req, res)
+    {
+        req.session.credencialSegura = undefined;
+        
+        return res.view("login");
     }
 };
