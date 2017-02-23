@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   colorH4 = "red";
   tamanoh4 = "51px";
 
+  nuevaTienda:any={};
 
   constructor() {
     this.apellido = "Lema";
@@ -35,5 +36,10 @@ export class AppComponent implements OnInit {
   hizofocus()
   {
     console.log("Hizo focus")
+  }
+
+  crearTienda( formulario)
+  {
+    console.log(formulario);
   }
 }
