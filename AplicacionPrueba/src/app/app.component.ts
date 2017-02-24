@@ -12,9 +12,8 @@ export class AppComponent implements OnInit {
   title: string = "Hola Amigos";
   nombre: string = "";
   apellido: string = "";
-  colorH4 = "red";
-  tamanoH4 = "52px";
-  classes = "btn btn-block btn-success";
+
+  error:string ="No hay errores";
 
   nuevaTienda: any = {};
 
@@ -48,6 +47,24 @@ export class AppComponent implements OnInit {
   crearTienda(formulario) {
     console.log(formulario);
     this._http
-      .post(this._masterURL.url, {}).subscribe(respuesta => console.log("respuesta", respuesta));
+      .post(this._masterURL.url+"Tienda", {
+        nombre: formulario.value.nombre
+
+      }).subscribe(
+      (res)=>{
+        console.log("No hubo errores");
+        console.log (res);
+        this.nuevaTienda = {}
+      },
+      (err)=>
+      {
+        console.log("Ocurrió un error", err);
+      },
+      ()=>
+      {
+        console.log("Terminó la función")
+      }
+
+      );
   }
 }
