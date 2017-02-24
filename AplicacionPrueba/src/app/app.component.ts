@@ -1,19 +1,25 @@
 import {Component, OnInit} from "@angular/core";
+import {Response, Http} from "@angular/http";
+import {MasterURLService} from "./services/master-url.service";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+// CTRL A +  -  CTRL + ALT + L
 export class AppComponent implements OnInit {
   title: string = "Hola Amigos";
   nombre: string = "";
   apellido: string = "";
   colorH4 = "red";
-  tamanoh4 = "51px";
+  tamanoH4 = "52px";
+  classes = "btn btn-block btn-success";
 
-  nuevaTienda:any={};
+  nuevaTienda: any = {};
 
-  constructor() {
+
+  constructor(private _http: Http, private _masterURL: MasterURLService) {
     this.apellido = "Lema";
     this.nombre = "Santiago";
     console.log("Inició el constructor")
@@ -25,21 +31,23 @@ export class AppComponent implements OnInit {
     console.log("On Init")
   }
 
-  nombrecompleto(): string {
-    return `${this.nombre} ${this.apellido}`;
+  nombreCompleto(): string {
+    return `${this.nombre} ${this.apellido}`
   }
 
-  hizoclic() {
-    console.log("Hizo Click")
+  hizoClick() {
+    console.log("Hizo Click");
+    console.log()
   }
 
-  hizofocus()
-  {
-    console.log("Hizo focus")
+  hizoFocus() {
+    console.log("Hizo focus");
   }
 
-  crearTienda( formulario)
-  {
+
+  crearTienda(formulario) {
     console.log(formulario);
+    this._http
+      .post(this._masterURL.url, {}).subscribe(respuesta => console.log("respuesta", respuesta));
   }
 }
