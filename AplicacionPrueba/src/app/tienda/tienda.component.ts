@@ -1,15 +1,16 @@
-import {Component, OnInit} from "@angular/core";
+import { Component, OnInit } from '@angular/core';
+
+import {MasterURLService} from "../services/master-url.service";
 import {Response, Http} from "@angular/http";
-import {Form, NgForm} from "@angular/forms";
-import {MasterURLService} from "./services/master-url.service";
+import {NgForm} from "@angular/forms";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-tienda',
+  templateUrl: './tienda.component.html',
+  styleUrls: ['./tienda.component.css']
 })
-// CTRL A +  -  CTRL + ALT + L
-export class AppComponent implements OnInit {
+export class TiendaComponent implements OnInit {
+
   title: string = "Bienvenido a Ingresar Tiendas";
   nuevaTienda = {};
   tiendasss = [];
