@@ -15,7 +15,7 @@ export const routes: Routes = [
       path: 'tienda', component: TiendaComponent
     },
     {
-      path: 'producto/:idProducto', component: ProductoComponent
+      path: 'tienda/:idTienda/producto', component: ProductoComponent
     }];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
