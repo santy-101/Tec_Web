@@ -43,10 +43,11 @@
 
   </div>
 <div class="row">
- 
+
   <div class="col-sm-3" *ngFor="let tiendita of tiendasss">
     <h3>{{tiendita.nombre}}</h3>
     <p>{{tiendita.id}}</p>
+    <button class="btn btn-block btn-danger" (click)="borrarTienda(tiendita.id)">Borrar</button>
 
 
   </div>

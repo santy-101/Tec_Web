@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   tiendasss = [];
   disabledButtons =
     {
-      NuevaTiendaFormSubmitButton : false
+      NuevaTiendaFormSubmitButton: false
     };
 
   constructor(private _http: Http, private _masterURL: MasterURLService) {
@@ -25,15 +25,13 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this._http.get(this._masterURL.url+"Tienda")
+    this._http.get(this._masterURL.url + "Tienda")
       .subscribe(
-        (res:Response)=>
-        {
+        (res: Response) => {
 
           this.tiendasss = res.json();
         },
-        (err)=>
-        {
+        (err) => {
           console.log(err)
         }
       )
@@ -44,26 +42,38 @@ export class AppComponent implements OnInit {
     this.disabledButtons.NuevaTiendaFormSubmitButton = true;
     console.log(formulario);
     this._http
-      .post(this._masterURL.url+"Tienda", {
+      .post(this._masterURL.url + "Tienda", {
         nombre: formulario.value.nombre
 
       }).subscribe(
-      (res)=>{
+      (res) => {
         console.log("No hubo errores");
-        console.log (res);
+        console.log(res);
+        this.tiendasss.push(res.json());
         this.nuevaTienda = {};
         this.disabledButtons.NuevaTiendaFormSubmitButton = false;
       },
-      (err)=>
-      {
+      (err) => {
         console.log("Ocurrió un error", err);
         this.disabledButtons.NuevaTiendaFormSubmitButton = false;
       },
-      ()=>
-      {
+      () => {
         console.log("Terminó la función")
       }
+    );
+  }
 
-      );
+
+  borrarTienda(id: number) {
+    this._http.delete(this._masterURL.url + "Tienda/" + id)
+      .subscribe(
+        (res) => {
+          let tiendaBorrada = res.json();
+          this.tiendasss = this.tiendasss.filter(value => tiendaBorrada.id != value.id);
+        },
+        (err) => {
+          console.log(err);
+        }
+      )
   }
 }
