@@ -7,7 +7,7 @@
       <p class="text-center">
         <%= usuarios[i].correo == '' ? 'Sin correo' : usuarios[i].correo%>
       </p>
-      <a style="color:white" href="/Usuario/destroy/<%=usuarios[i].id%>">
+      <a style="color:white" href="/Usuario/BorrarUsuario?id=<%=usuarios[i].id%>">
         <button class="btn btn-block btn-danger"> Borrar</button>
       </a>
       <br>

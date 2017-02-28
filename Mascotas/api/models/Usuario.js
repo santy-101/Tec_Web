@@ -15,7 +15,7 @@ module.exports = {
       },
       apellidos:{
           type:'string',
-          minLength:5,
+          minLength:4,
           required:true
       },
       correo:{
@@ -24,7 +24,7 @@ module.exports = {
           defaultsTo:'correo@invalido.com'
       }
   }
-    
+
 };
 
 

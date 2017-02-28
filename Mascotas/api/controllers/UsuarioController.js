@@ -10,15 +10,9 @@
 module.exports = {
 
   crearUsuario: function (req, res) {
-    //   Se accede asi: /Usuario/crearUsuario
-
-    // Guardando todos los parametros en la variable parametros
 
     var parametros = req.allParams();
     console.log(parametros);
-    console.log('sacudelo');
-    console.log(req.method);
-
 
     if (req.method == 'POST') {
       if (parametros.nombres && parametros.apellidos) {
@@ -31,8 +25,6 @@ module.exports = {
           if (error) return res.serverError()
           sails.log.info(usuarioCreado);
 
-
-
           Usuario.find({
             skip: 1
           }).exec(function (error, usuariosEncontrados) {
@@ -43,8 +35,6 @@ module.exports = {
               usuarios: usuariosEncontrados
             })
           });
-
-
 
 
         });
@@ -70,13 +60,9 @@ module.exports = {
   crearUsuarioForm: function (req, res) {
 
     var parametros = req.allParams();
-    console.log(parametros);
 
-    console.log('Metodo:', req.method);
     if (req.method == 'POST') {
       if (parametros.nombres && parametros.apellidos) {
-        //creo el usuario
-        console.log('Va a crear el usuario.')
         Usuario.create({
           nombres: parametros.nombres,
           apellidos: parametros.apellidos,
@@ -86,7 +72,7 @@ module.exports = {
             return res.view('error', {
               title: 'Error',
               error: {
-                descripcion: 'hubo un error enviando los parametros:',
+                descripcion: 'Hubo un error enviando los parámetros',
                 error,
                 url: '/crearUsuario'
               }
@@ -105,8 +91,7 @@ module.exports = {
         });
 
       } else {
-        // bad Request
-        console.log('NO PARAMETROS');
+        console.log('NO PARÁMETROS');
         return res.view('error', {
           title: 'Error',
           error: {
@@ -186,6 +171,51 @@ module.exports = {
       });
     }
 
+  },
+  borrarUsuario: function (req, res) {
+    var parametros = req.allParams();
+
+    if (parametros.id) {
+
+      Usuario.destroy({
+        id: parametros.id
+      }).exec(function (errorInesperado, UsuarioEliminado) {
+        if (errorInesperado) {
+          return res.view('vistas/Error', {
+            error: {
+              descripcion: "Tuvimos un Error Inesperado",
+              rawError: errorInesperado,
+              url: "/ListarUsuarios"
+            }
+          });
+        }
+        Usuario.find()
+          .exec(function (errorIndefinido, usuariosEncontrados) {
+
+            if (errorIndefinido) {
+              res.view('vistas/Error', {
+                error: {
+                  descripcion: "Hubo un problema cargando los usuarios",
+                  rawError: errorIndefinido,
+                  url: "/ListarUsuarios"
+                }
+              });
+            }
+            res.view('vistas/listarUsuarios', {
+              usuarios: usuariosEncontrados
+            });
+          })
+      })
+
+    } else {
+      return res.view('vistas/Error', {
+        error: {
+          descripcion: "Necesitamos el ID para borrar la bodega",
+          rawError: "No envía ID",
+          url: "/ListarUsuarios"
+        }
+      });
+    }
   }
 
 };
