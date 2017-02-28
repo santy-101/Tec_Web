@@ -11,9 +11,10 @@ module.exports = {
     var parametros = req.allParams();
 
     if (req.method == 'POST') {
-      if (parametros.nombre) {
+      if (parametros.nombre && parametros.peso) {
         Raza.create({
           nombre: parametros.nombre,
+          peso: parametros.peso
         }).exec(function (error, razaCreado) {
           if (error) return res.view('error', {
             title: 'Error',
@@ -47,6 +48,59 @@ module.exports = {
         error: {
           descripcion: 'Falla en el metodo HTTP',
           url: '/crearRaza'
+        }
+      });
+    }
+
+  },
+  editarRaza: function (req, res) {
+
+    var parametros = req.allParams();
+    if (req.method == 'POST') {
+      if (parametros.id && parametros.nombre && parametros.peso) {
+
+        Raza.update({
+          id: parametros.id
+        }, {
+          nombre: parametros.nombre,
+          peso: parametros.peso
+        }).exec(function (error) {
+          if (error) {
+            return res.view('error', {
+              title: 'Error',
+              error: {
+                descripcion: 'Hubo un error editando la raza: ' + error,
+                url: '/listarRazas'
+              }
+            });
+          }
+
+          Raza.find().exec(function (error, razasEncontradas) {
+            if (error) return res.serverError()
+            return res.view('vistas/Raza/listarRazas', {
+              title: 'Lista de Razas',
+              razas: razasEncontradas
+            })
+          });
+
+        });
+
+      } else {
+        return res.view('error', {
+          title: 'Error',
+          error: {
+            descripcion: 'No envía todos los parametros',
+            url: '/editarRaza'
+          }
+        });
+      }
+    } else {
+      console.log('POST');
+      return res.view('error', {
+        title: 'Error',
+        error: {
+          descripcion: 'Falla en el metodo HTTP',
+          url: '/editarRaza'
         }
       });
     }

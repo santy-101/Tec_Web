@@ -114,6 +114,31 @@ module.exports = {
       title: 'Crear Raza'
     })
   },
+  editarRaza: function (req, res) {
+
+    var parametros = req.allParams();
+    console.log(parametros);
+    if (parametros.id) {
+
+      Raza.findOne({
+        id: parametros.id
+      }).exec(function (error, razaEncontrada) {
+        if (error) return res.serverError()
+        return res.view('vistas/Raza/editarRaza', {
+          title: 'Editar raza - ' + razaEncontrada.nombre,
+          raza: razaEncontrada
+        })
+      });
+
+    } else {
+      return res.view('error', {
+        title: 'Error',
+        error: {
+          descripcion: 'No existe el ID'
+        }
+      });
+    }
+  },
   listarRazas: function (req, res) {
 
     Raza.find().exec(function (error, razasEncontrados) {

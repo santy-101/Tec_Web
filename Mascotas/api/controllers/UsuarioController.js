@@ -117,8 +117,6 @@ module.exports = {
     var parametros = req.allParams();
     if (req.method == 'POST') {
       if (parametros.nombres && parametros.apellidos && parametros.id) {
-        //creo el usuario
-        console.log('Va a actualizar el usuario.')
         Usuario.update({
           id: parametros.id
         }, {

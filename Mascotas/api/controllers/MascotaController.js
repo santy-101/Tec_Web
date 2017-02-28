@@ -28,7 +28,6 @@ module.exports = {
 
           Mascota.find().populate("idRaza").exec(function (error, mascotasEncontrados) {
             if (error) return res.serverError()
-            sails.log.info(mascotasEncontrados);
             return res.view('vistas/Mascota/listarMascotas', {
               title: 'Lista de Mascotas',
               mascotas: mascotasEncontrados
@@ -37,7 +36,7 @@ module.exports = {
 
         });
       } else {
-        // bad Request
+
         return res.view('error', {
           title: 'Error',
           error: {
@@ -60,7 +59,6 @@ module.exports = {
   editarMascota: function (req, res) {
 
     var parametros = req.allParams();
-    sails.log.info(parametros);
     if (req.method == 'POST') {
       if (parametros.nombre) {
 
@@ -68,18 +66,16 @@ module.exports = {
           id: parametros.id
         }, {
           nombre: parametros.nombre,
-        }).exec(function (error, mascotaCreado) {
+        }).exec(function (error) {
           if (error) {
             return res.view('error', {
               title: 'Error',
               error: {
-                descripcion: 'Hubo un error creando la mascota: ' + error,
-                url: '/crearMascota'
+                descripcion: 'Hubo un error editando la mascota: ' + error,
+                url: '/listarMascota'
               }
             });
           }
-
-
           Mascota.find().populate("idRaza").exec(function (error, mascotasEncontrados) {
             if (error) return res.serverError()
             return res.view('vistas/Mascota/listarMascotas', {
@@ -91,7 +87,7 @@ module.exports = {
         });
 
       } else {
-        // bad Request
+
         console.log('NO PARAMETROS');
         return res.view('error', {
           title: 'Error',

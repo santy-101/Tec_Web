@@ -15,11 +15,16 @@ module.exports = {
       required: true,
       unique: true
     },
-    //Mascotas -> es el nombre en plural del modelo a relacionarse
+    peso:
+      {
+        type: 'integer',
+        required:true
+      },
+
     mascotas: {
-      // Collection -> Nombre del Modelo en Sails
+
       collection: 'Mascota',
-      // Via-> Es el campo por el cual vamos a relacionar FOREIGN KEY
+
       via: 'idRaza'
     }
 
