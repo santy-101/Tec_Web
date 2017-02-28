@@ -15,11 +15,11 @@ module.exports = {
         Raza.create({
           nombre: parametros.nombre,
           peso: parametros.peso
-        }).exec(function (error, razaCreado) {
+        }).exec(function (error, razaCreada) {
           if (error) return res.view('error', {
             title: 'Error',
             error: {
-              descripcion: 'Hubo Problemas creando la raza, intentalo de nuevo: '+error,
+              descripcion: 'Hubo problemas creando la raza, inténtalo de nuevo: ' + error,
               url: '/crearRaza'
             }
           });
@@ -57,12 +57,10 @@ module.exports = {
 
     var parametros = req.allParams();
     if (req.method == 'POST') {
-      if (parametros.id && parametros.nombre && parametros.peso) {
-
+      if (parametros.id) {
         Raza.update({
           id: parametros.id
         }, {
-          nombre: parametros.nombre,
           peso: parametros.peso
         }).exec(function (error) {
           if (error) {
@@ -76,7 +74,7 @@ module.exports = {
           }
 
           Raza.find().exec(function (error, razasEncontradas) {
-            if (error) return res.serverError()
+            if (error) return res.serverError();
             return res.view('vistas/Raza/listarRazas', {
               title: 'Lista de Razas',
               razas: razasEncontradas
@@ -99,7 +97,7 @@ module.exports = {
       return res.view('error', {
         title: 'Error',
         error: {
-          descripcion: 'Falla en el metodo HTTP',
+          descripcion: 'Falla en el método HTTP',
           url: '/editarRaza'
         }
       });

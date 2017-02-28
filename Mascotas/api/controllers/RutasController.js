@@ -35,7 +35,7 @@ module.exports = {
       Usuario.findOne({
         id: parametros.id
       }).exec(function (error, usuarioEncontrado) {
-        if (error) return res.serverError()
+        if (error) return res.serverError();
         return res.view('vistas/editarUsuario', {
           title: 'Editar usuario - ' + usuarioEncontrado.apellidos,
           usuario: usuarioEncontrado

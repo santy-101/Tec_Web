@@ -15,11 +15,10 @@ module.exports = {
       required: true,
       unique: true
     },
-    peso:
-      {
-        type: 'integer',
-        required:true
-      },
+    peso: {
+      type: 'integer',
+      required: true
+    },
 
     mascotas: {
 

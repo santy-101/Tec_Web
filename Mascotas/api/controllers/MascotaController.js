@@ -76,11 +76,11 @@ module.exports = {
               }
             });
           }
-          Mascota.find().populate("idRaza").exec(function (error, mascotasEncontrados) {
+          Mascota.find().populate("idRaza").exec(function (error, mascotasEncontradas) {
             if (error) return res.serverError()
             return res.view('vistas/Mascota/listarMascotas', {
               title: 'Lista de Mascotas',
-              mascotas: mascotasEncontrados
+              mascotas: mascotasEncontradas
             })
           });
 
@@ -88,7 +88,7 @@ module.exports = {
 
       } else {
 
-        console.log('NO PARAMETROS');
+        console.log('NO PARÁMETROS');
         return res.view('error', {
           title: 'Error',
           error: {
@@ -102,7 +102,7 @@ module.exports = {
       return res.view('error', {
         title: 'Error',
         error: {
-          descripcion: 'Falla en el metodo HTTP',
+          descripcion: 'Falla en el método HTTP',
           url: '/editarMascota'
         }
       });
@@ -116,7 +116,7 @@ module.exports = {
 
       Mascota.destroy({
         id: parametros.id
-      }).exec(function (errorInesperado, MascotaEliminada) {
+      }).exec(function (errorInesperado, mascotaEliminada) {
         if (errorInesperado) {
           return res.view('vistas/Error', {
             error: {
