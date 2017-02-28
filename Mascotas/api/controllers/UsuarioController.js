@@ -136,7 +136,7 @@ module.exports = {
               }
             });
           }
-          sails.log.info('Se actualizo el usuario: ', usuarioCreado);
+          sails.log.info('Se actualizó el usuario: ', usuarioCreado);
 
           Usuario.find().exec(function (error, usuariosEncontrados) {
             if (error) return res.serverError()
@@ -151,7 +151,7 @@ module.exports = {
 
       } else {
         // bad Request
-        console.log('NO PARAMETROS');
+        console.log('NO PARÁMETROS');
         return res.view('error', {
           title: 'Error',
           error: {

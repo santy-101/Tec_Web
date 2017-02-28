@@ -75,35 +75,17 @@ module.exports = {
   editarMascota: function (req, res) {
 
     var parametros = req.allParams();
+    console.log(parametros);
     if (parametros.id) {
+
       Mascota.findOne({
         id: parametros.id
-      }).exec(function (error, mascotaEncontrado) {
-        if (error) return res.view('error', {
-          title: 'Error',
-          error: {
-            descripcion: 'Fallo al buscar la mascota',
-            url: '/crearMascotas'
-          }
-        });
-
-
-        Raza.find().exec(function (error, razasEncontrados) {
-          if (error) return res.view('error', {
-            title: 'Error',
-            error: {
-              descripcion: 'Fallo al buscar la mascota',
-              url: '/crearMascotas'
-            }
-          });
-
-          return res.view('vistas/Mascota/editarMascota', {
-            title: 'Editar Mascota - ' + mascotaEncontrado.nombre,
-            mascota: mascotaEncontrado,
-            razas: razasEncontrados
-          })
-        });
-
+      }).exec(function (error, mascotaEncontrada) {
+        if (error) return res.serverError()
+        return res.view('vistas/Mascota/editarMascota', {
+          title: 'Editar mascota- ' + mascotaEncontrada.nombre,
+          mascota: mascotaEncontrada
+        })
       });
 
     } else {
@@ -117,7 +99,7 @@ module.exports = {
   },
   listarMascotas: function (req, res) {
 
-    Mascota.find().exec(function (error, mascotasEncontrados) {
+    Mascota.find().populate("idRaza").exec(function (error, mascotasEncontrados) {
       if (error) return res.serverError()
       return res.view('vistas/Mascota/listarMascotas', {
         title: 'Lista de Mascotas',

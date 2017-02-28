@@ -52,4 +52,49 @@ module.exports = {
     }
 
   },
+  borrarRaza: function (req, res) {
+    var parametros = req.allParams();
+
+    if (parametros.id) {
+
+      Raza.destroy({
+        id: parametros.id
+      }).exec(function (errorInesperado, razaEliminada) {
+        if (errorInesperado) {
+          return res.view('vistas/Error', {
+            error: {
+              descripcion: "Tuvimos un Error Inesperado",
+              rawError: errorInesperado,
+              url: "/ListarRazas"
+            }
+          });
+        }
+        Raza.find()
+          .exec(function (errorIndefinido, razasEncontradas) {
+
+            if (errorIndefinido) {
+              res.view('vistas/Error', {
+                error: {
+                  descripcion: "Hubo un problema cargando las razas",
+                  rawError: errorIndefinido,
+                  url: "/ListarRazas"
+                }
+              });
+            }
+            res.view('vistas/Raza/listarRazas', {
+              razas: razasEncontradas
+            });
+          })
+      })
+
+    } else {
+      return res.view('vistas/Error', {
+        error: {
+          descripcion: "Necesitamos el ID para borrar la raza",
+          rawError: "No envía ID",
+          url: "/ListarRaza"
+        }
+      });
+    }
+  }
 };

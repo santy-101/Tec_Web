@@ -18,9 +18,9 @@ module.exports = {
       },
       paisNacimiento:{
           type:'string',
-          enum:['Ecuador','Peru','Colombia']
+          enum:['Ecuador','Perú','Colombia']
       },
-      // idRaza es el nombre del Foreign Key
+
       idRaza:{
           // Model-> es el nombre de la tabla padre
           model: 'Raza',
